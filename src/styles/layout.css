@@ -5,19 +5,101 @@
 /* ///// CUSTOM CSS ///// */
 html {
   scroll-behavior: auto !important;
+  background-image: linear-gradient(
+    to left,
+    #06141b,
+    #0a171f,
+    #0d1b24,
+    #0f1e28,
+    #11212d
+  );
 }
 
 body {
+  position: relative;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #ffffff;
-  background-color: #06141b;
+  background-image: linear-gradient(
+    to left,
+    #06141b,
+    #0a171f,
+    #0d1b24,
+    #0f1e28,
+    #11212d
+  );
   overflow-x: hidden;
 }
 
 .relative {
   position: relative;
+}
+
+.logo {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  width: 12vw;
+  z-index: 10000;
+}
+
+.main-nav-div {
+  position: fixed;
+  top: 100px;
+  right: 16px;
+  z-index: 10000;
+}
+
+.main-nav-div a {
+  display: block;
+  color: #ffffff;
+  text-transform: lowercase;
+  text-align: right;
+  font-size: 16px;
+  line-height: 2.5;
+}
+
+.social-links-div {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.social-links-div a {
+  color: #ffffff;
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 991px) {
+  .logo {
+    width: 20vw;
+  }
+
+  .main-nav-div a {
+    font-size: 12px;
+    line-height: 3;
+  }
+
+  .social-links-div a {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 40vw;
+  }
+
+  .main-nav-div {
+    top: 4px;
+  }
 }
 
 /* text and fonts */
@@ -64,7 +146,7 @@ a {
   font-size: 10vw;
 }
 
-@media (max-width: 575px) {
+@media only screen and (max-width: 600px) {
   .section-title {
     font-size: 4rem;
   }
@@ -123,7 +205,7 @@ section {
 /* components */
 .dk-button {
   color: #ffffff;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
   padding: 16px 28px;
   background: RGBA(6, 20, 27, 0.2);
@@ -142,7 +224,7 @@ section {
 
 .lt-button {
   color: #222222;
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-decoration: none;
   padding: 16px 28px;
   background: rgba(240, 240, 240, 0.7);
@@ -157,12 +239,4 @@ section {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.7);
   border: 2px solid transparent; /* Set border to transparent */
   border-image: linear-gradient(to right bottom, #eb8ef3, #8ec8f3) 1; /* Gradient border */
-}
-
-@media (max-width: 1199px) {
-  .dk-button,
-  .lt-button {
-    font-size: 1rem;
-    padding: 12px 21px;
-  }
 }

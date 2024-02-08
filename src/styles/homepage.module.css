@@ -1,0 +1,275 @@
+/* HERO SECTION */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    #06141b,
+    #0a171f,
+    #0d1b24,
+    #0f1e28,
+    #11212d
+  );
+}
+
+.headline-div {
+  width: 72.5vw;
+  margin: 0 auto;
+}
+
+.headline1a,
+.headline1b {
+  font-size: 15vw;
+  font-weight: 700;
+  line-height: 0.75;
+  text-transform: uppercase;
+  margin-left: -0.5vw;
+}
+
+.headline2 {
+  font-size: 3.866vw;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.headline-description {
+  font-size: 2vw;
+  line-height: 1.3;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .headline-div {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .headline1a,
+  .headline1b {
+    font-size: 18.65vw;
+  }
+
+  .headline2 {
+    font-size: 4.8vw;
+  }
+
+  .headline-description {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-section {
+    padding: 0 4vw 0;
+  }
+
+  .headline-div {
+    width: 100%;
+  }
+
+  .headline1a,
+  .headline1b {
+    font-size: 18.7vw;
+  }
+
+  .headline2 {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .headline-description {
+    font-size: 1.5rem;
+  }
+
+  .background-img {
+    display: none;
+  }
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    #06141b,
+    #0a171f,
+    #0d1b24,
+    #0f1e28,
+    #11212d
+  );
+}
+
+.about-col1 {
+  margin-top: 50px;
+}
+
+.about-intro {
+  font-size: 10.6vw;
+  font-weight: 600;
+  line-height: 0.9;
+}
+
+.about-section-description {
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+
+.about-section-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-section-img-div1,
+.about-section-img-div2,
+.about-section-img-div3,
+.about-section-img-div4 {
+  position: absolute;
+  top: 0;
+}
+
+.about-section-img-div .about-section-img {
+  border-radius: 30px;
+  width: 80%;
+  transition: transform 0.3s ease-out;
+  transform-origin: center;
+}
+
+.about-section-img-div4 .about-section-img {
+  background-color: #99b2c5;
+}
+
+.about-section-img-div3 .about-section-img {
+  background-color: #a1b9cc;
+}
+
+.about-section-img-div2 .about-section-img {
+  background-color: #a9c1d3;
+}
+
+.about-section-img-div1 .about-section-img {
+  background-color: #b1c8da;
+}
+
+.about-section-img-div0 .about-section-img {
+  background-color: #bacfe0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-col1 {
+    margin-top: 0;
+  }
+
+  .about-intro {
+    font-size: 9vw;
+  }
+
+  .about-section-description {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .about-col1 {
+    margin-top: 0;
+  }
+
+  .about-intro {
+    font-size: 8vw;
+  }
+
+  .about-section-description {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-col1 {
+    order: 2;
+    margin-top: 0;
+  }
+
+  .about-col2 {
+    order: 1;
+  }
+
+  .about-section-description {
+    font-size: 1rem;
+  }
+
+  .about-section-img-div {
+    padding-bottom: 50px;
+  }
+
+  .about-section-img-div .about-section-img {
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  .about-section-img-div1,
+  .about-section-img-div2,
+  .about-section-img-div3,
+  .about-section-img-div4 {
+    display: none;
+  }
+}
+
+/* PROJECT SECTION */
+.project-section {
+  overflow: hidden;
+  background-image: linear-gradient(
+    to left,
+    #06141b,
+    #0a171f,
+    #0d1b24,
+    #0f1e28,
+    #11212d
+  );
+}
+
+.project-div {
+  position: relative;
+
+  height: 100vh;
+  line-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 75vh;
+  border-radius: 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+}
+
+.project-img::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 75vh;
+}
+
+.project-div .project-title {
+  position: relative;
+  color: #ffffff;
+  font-size: 5vw;
+  line-height: 0.9;
+}
