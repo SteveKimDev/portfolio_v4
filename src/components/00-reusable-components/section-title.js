@@ -10,18 +10,20 @@ const SectionTitle = ({ title }) => {
   useEffect(() => {
     gsap.fromTo(
       [`.section-title`],
-      { y: '25px', opacity: 0 },
+      { y: '36px', opacity: 0, height: 0 },
       {
         y: '0px',
         opacity: 1,
+        height: 'auto',
         duration: 1,
-        ease: 'power1.inOut',
+        delay: 0.5,
+        ease: 'power1.outIn',
 
         // ScrollTrigger-specific properties
         scrollTrigger: {
           trigger: '#section-title-trigger',
           start: 'top 80%',
-          toggleActions: 'play none none none',
+          toggleActions: 'play none none reverse',
         },
       }
     );

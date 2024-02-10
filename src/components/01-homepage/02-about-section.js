@@ -19,19 +19,20 @@ const AboutSection = () => {
         `.${Homepage.aboutSectionDescription}`,
         '.about-section-cta',
       ],
-      { y: '25px', opacity: 0 },
+      { y: 36, opacity: 0, height: 0 },
       {
-        y: '0px',
+        y: 0,
         opacity: 1,
+        height: 'auto',
         duration: 1,
-        ease: 'power1.inOut',
+        delay: 0.5,
+        ease: 'power1.outIn',
         stagger: 0.5,
 
-        // ScrollTrigger-specific properties
         scrollTrigger: {
           trigger: '#about-row-trigger',
-          start: 'top 80%',
-          toggleActions: 'play none none none',
+          start: 'top 70%',
+          toggleActions: 'play none none reverse',
         },
       }
     );

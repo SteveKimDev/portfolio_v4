@@ -5,7 +5,7 @@ const MainNav = () => {
   return (
     <div className='main-nav-div'>
       <Link to='/'>About</Link>
-      <Link to='/'>Projects</Link>
+      <Link to='/#project-section'>Projects</Link>
       <Link to='/'>Contact</Link>
     </div>
   );

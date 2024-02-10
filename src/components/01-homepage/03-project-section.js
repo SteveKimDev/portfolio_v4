@@ -27,7 +27,7 @@ const ProjectSection = () => {
           trigger: section,
           scrub: 1,
           start: 'top 90%',
-          end: 'bottom center',
+          end: 'bottom 30%',
         },
       });
 
@@ -54,7 +54,7 @@ const ProjectSection = () => {
     });
   }, []);
   return (
-    <section className={Homepage.projectSection}>
+    <section id='project-section' className={Homepage.projectSection}>
       <SectionTitle title='Selected Projects' />
       <div className={`${Homepage.projectDiv}`}>
         <Project01 />

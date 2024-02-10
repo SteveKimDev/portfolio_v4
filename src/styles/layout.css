@@ -4,7 +4,8 @@
 
 /* ///// CUSTOM CSS ///// */
 html {
-  scroll-behavior: auto !important;
+  /* controlls Link smooth scrolling */
+  /* scroll-behavior: auto !important; */
   background-image: linear-gradient(
     to left,
     #06141b,
@@ -40,7 +41,7 @@ body {
   position: fixed;
   top: 12px;
   left: 12px;
-  width: 12vw;
+  width: 180px;
   z-index: 10000;
 }
 

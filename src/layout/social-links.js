@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 import { Stack } from 'react-bootstrap';
 
 const SocialLinks = () => {
@@ -7,13 +6,31 @@ const SocialLinks = () => {
     <div className='social-links-div'>
       <Stack direction='horizontal' gap={5}>
         <div>
-          <Link to='https://www.linkedin.com/in/stevekim-io'>LinkedIn</Link>
+          <a
+            href='https://www.linkedin.com/in/stevekim-io'
+            target='_blank'
+            rel='noreferrer'
+          >
+            LinkedIn
+          </a>
         </div>
         <div>
-          <Link to='https://www.behance.net/stevekim-io'>Behance</Link>
+          <a
+            href='https://www.behance.net/stevekim-io'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Behance
+          </a>
         </div>
         <div>
-          <Link to='https://www.linkedin.com/in/stevekim-io'>Dribble</Link>
+          <a
+            href='https://www.linkedin.com/in/stevekim-io'
+            target='_blank'
+            rel='noreferrer'
+          >
+            Dribble
+          </a>
         </div>
       </Stack>
     </div>
