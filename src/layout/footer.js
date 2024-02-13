@@ -16,7 +16,6 @@ const Footer = () => {
         opacity: 1,
         height: 'auto',
         duration: 1,
-        delay: 0.5,
         stagger: 0.8,
         ease: 'power1.outIn',
 
@@ -24,7 +23,6 @@ const Footer = () => {
         scrollTrigger: {
           trigger: '#footer-trigger',
           start: 'top center',
-          stagger: 0.8,
           toggleActions: 'play none none reverse',
         },
       }
@@ -32,8 +30,8 @@ const Footer = () => {
   }, []);
   return (
     <section className='footer-section'>
-      <div id='footer-trigger'>
-        <h2 className='text-align-center gradient-color section-title footer-header-div'>
+      <div id='footer-trigger' className='footer-header-div'>
+        <h2 className='text-align-center gradient-color section-title '>
           Let's Connect
         </h2>
         <div className='footer-link-div'>

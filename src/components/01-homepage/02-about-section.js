@@ -19,7 +19,7 @@ const AboutSection = () => {
         `.${Homepage.aboutSectionDescription}`,
         '.about-section-cta',
       ],
-      { y: 36, opacity: 0, height: 0 },
+      { y: 50, opacity: 0, height: 0 },
       {
         y: 0,
         opacity: 1,
