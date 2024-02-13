@@ -69,14 +69,12 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title='Product Designer' />
-
       <div ref={heroSectionRef}>
         <HeroSection />
       </div>
       <div ref={aboutSectionRef}>
         <AboutSection />
       </div>
-
       <ProjectSection />
     </Layout>
   );

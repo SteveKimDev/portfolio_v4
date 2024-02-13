@@ -6,7 +6,7 @@ const MainNav = () => {
     <div className='main-nav-div'>
       <Link to='/'>About</Link>
       <Link to='/#project-section'>Projects</Link>
-      <Link to='/'>Contact</Link>
+      <a href='mailto:steve@stevekim.io'>Contact</a>
     </div>
   );
 };

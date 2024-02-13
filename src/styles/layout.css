@@ -78,6 +78,33 @@ body {
   font-size: 16px;
 }
 
+.footer-section {
+  overflow: hidden;
+  background-image: linear-gradient(
+    to left,
+    #06141b,
+    #0a171f,
+    #0d1b24,
+    #0f1e28,
+    #11212d
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link-div {
+  text-align: center;
+}
+
+.footer-link-div a {
+  color: #ffffff;
+  font-size: 9vw;
+  font-weight: 200;
+  line-height: 0.8;
+}
+
 @media only screen and (max-width: 991px) {
   .logo {
     width: 20vw;

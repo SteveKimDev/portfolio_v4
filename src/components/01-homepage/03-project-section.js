@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-import SectionTitle from '../00-reusable-components/section-title';
 import Project01 from './03a-project01';
 import Project02 from './03b-project02';
 import Project03 from './03c-project03';
@@ -16,6 +15,27 @@ const ProjectSection = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    // section title animation
+    gsap.fromTo(
+      [`.section-title`],
+      { y: '36px', opacity: 0, height: 0 },
+      {
+        y: '0px',
+        opacity: 1,
+        height: 'auto',
+        duration: 1,
+        delay: 0.5,
+        ease: 'power1.outIn',
+
+        scrollTrigger: {
+          trigger: '#selected-projects-title-trigger',
+          start: 'top 80%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
+    // projects scroll animation
     const sections = gsap.utils.toArray(`.${Homepage.projectDiv}`);
 
     sections.forEach((section) => {
@@ -55,7 +75,11 @@ const ProjectSection = () => {
   }, []);
   return (
     <section id='project-section' className={Homepage.projectSection}>
-      <SectionTitle title='Selected Projects' />
+      <div id='selected-projects-title-trigger'>
+        <h1 className='gradient-color section-title text-align-center'>
+          Selected Projects
+        </h1>
+      </div>
       <div className={`${Homepage.projectDiv}`}>
         <Project01 />
       </div>
