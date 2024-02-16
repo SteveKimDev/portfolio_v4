@@ -13,18 +13,18 @@ const ApproachSection = () => {
     // section title animation
     gsap.fromTo(
       [`#approach-section-title`],
-      { y: '36px', opacity: 0, height: 0 },
+      { y: 36, opacity: 0, height: 0 },
       {
-        y: '0px',
+        y: 0,
         opacity: 1,
         height: 'auto',
         duration: 1,
-        delay: 1,
+        delay: 0.5,
         ease: 'power1.outIn',
 
         scrollTrigger: {
-          trigger: `.${Aboutpage.approachSection}`,
-          start: 'top 70%',
+          trigger: `#approach-section-title-trigger`,
+          start: 'top 80%',
           toggleActions: 'play none none reverse',
         },
       }
@@ -32,18 +32,18 @@ const ApproachSection = () => {
 
     gsap.fromTo(
       [`.${Aboutpage.approachCard}`],
-      { y: '36px', opacity: 0 },
+      { y: 36, opacity: 0 },
       {
-        y: '0px',
+        y: 0,
         opacity: 1,
         duration: 1,
-        delay: 0.5,
+        delay: 1,
         ease: 'power1.outIn',
         stagger: 0.5,
 
         scrollTrigger: {
           trigger: `#approach-card-trigger`,
-          start: 'top 70%r',
+          start: 'top 70%',
           toggleActions: 'play none none reverse',
         },
       }
@@ -51,10 +51,9 @@ const ApproachSection = () => {
   }, []);
   return (
     <section className={Aboutpage.approachSection}>
-      <Row>
+      <Row id='approach-section-title-trigger'>
         <Col>
           <h1
-            style={{ lineHeight: 'normal' }}
             id='approach-section-title'
             className='section-title gradient-color'
           >
@@ -63,7 +62,7 @@ const ApproachSection = () => {
         </Col>
       </Row>
       <Row id='approach-card-trigger'>
-        <Col xl={3} sm={6} xs={12} className={Aboutpage.cardCol}>
+        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
           <div className={`card ${Aboutpage.approachCard}`}>
             <h2>UX Research</h2>
             <p>
@@ -75,8 +74,10 @@ const ApproachSection = () => {
             </p>
           </div>
         </Col>
-        <Col xl={3} sm={6} xs={12} className={Aboutpage.cardCol}>
-          <div className={`card ${Aboutpage.approachCard}`}>
+        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
+          <div
+            className={`card ${Aboutpage.approachCard}  ${Aboutpage.approachCard02}`}
+          >
             <h2>UX Design</h2>
             <p>
               My approach centers on crafting visually captivating and
@@ -87,8 +88,10 @@ const ApproachSection = () => {
             </p>
           </div>
         </Col>
-        <Col xl={3} sm={6} xs={12} className={Aboutpage.cardCol}>
-          <div className={`card ${Aboutpage.approachCard}`}>
+        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
+          <div
+            className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard03}`}
+          >
             <h2>Development</h2>
             <p>
               Deep collaboration with developers to realize our collective
@@ -99,8 +102,10 @@ const ApproachSection = () => {
             </p>
           </div>
         </Col>
-        <Col xl={3} sm={6} xs={12} className={Aboutpage.cardCol}>
-          <div className={`card ${Aboutpage.approachCard}`}>
+        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
+          <div
+            className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard04}`}
+          >
             <h2>Teamwork</h2>
             <p>
               Fostering open communication and collaboration is crucial for

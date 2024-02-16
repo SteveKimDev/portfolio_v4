@@ -47,18 +47,20 @@ const AboutIntroSection = () => {
     );
 
     // parallax animation
-    gsap.to('[data-speed]', {
-      y: (i, el) =>
-        (1 - parseFloat(el.getAttribute('data-speed'))) *
-        ScrollTrigger.maxScroll(window),
-      ease: 'none',
-      scrollTrigger: {
-        start: 0,
-        end: 'max',
-        invalidateOnRefresh: true,
-        scrub: 0,
-      },
-    });
+    if (window.innerWidth >= 601) {
+      gsap.to('[data-speed]', {
+        y: (i, el) =>
+          (1 - parseFloat(el.getAttribute('data-speed'))) *
+          ScrollTrigger.maxScroll(window),
+        ease: 'none',
+        scrollTrigger: {
+          start: 0,
+          end: 'max',
+          invalidateOnRefresh: true,
+          scrub: 0,
+        },
+      });
+    }
   }, []);
   return (
     <section className={Aboutpage.aboutIntroSection}>

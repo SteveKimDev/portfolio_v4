@@ -5,7 +5,7 @@
 /* ///// CUSTOM CSS ///// */
 html {
   /* controlls Link smooth scrolling */
-  /* scroll-behavior: auto !important; */
+  scroll-behavior: auto !important;
   background-image: linear-gradient(
     to left,
     #06141b,
@@ -172,12 +172,12 @@ a {
 
 .section-title {
   font-size: 10vw;
-  line-height: 0.9;
 }
 
 @media only screen and (max-width: 600px) {
   .section-title {
     font-size: 4rem;
+    text-align: center;
   }
 
   .mobile-display-none {
@@ -306,6 +306,11 @@ section {
 }
 
 .card h2 {
+  background: linear-gradient(135deg, #8ec8f3, #a6b4ff, #c7a3ff, #eb8ef3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: block;
   font-size: 2vw;
   font-weight: 300;
 }
@@ -313,4 +318,32 @@ section {
 .card p {
   font-size: 1rem;
   margin-bottom: 0;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .card h2 {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .card h2 {
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .card h2 {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    border-radius: 15px;
+  }
+
+  .card h2 {
+    font-size: 7vw;
+  }
 }

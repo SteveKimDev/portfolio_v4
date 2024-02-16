@@ -1,10 +1,11 @@
 /* intro section */
 .about-intro-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 100px;
+  height: 100vh;
 }
 
 .intro-header {
+  display: inline-flex;
   font-size: 2vw;
   font-weight: 300;
 }
@@ -20,14 +21,23 @@
   height: auto;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-intro-section {
-    padding-top: 100px;
-    padding-bottom: 120px;
+    height: 90vh;
   }
 
-  .intro-header {
-    font-size: 2vw;
+  .about-intro-img-div {
+    margin: 50px 8px 0;
+  }
+
+  .about-intro-img {
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-intro-section {
+    height: 55vh;
   }
 
   .about-intro-img-div {
@@ -41,12 +51,12 @@
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {
   .about-intro-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    height: 42.5vh;
   }
 
-  .intro-header {
-    font-size: 2vw;
+  .about-intro-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .about-intro-img-div {
@@ -60,7 +70,8 @@
 
 @media only screen and (max-width: 600px) {
   .about-intro-section {
-    padding: 120px 4vw;
+    padding: 120px 4vw 50px;
+    height: auto;
   }
 
   .intro-header {
@@ -85,7 +96,7 @@
 
 /* approach section */
 .approach-section {
-  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .card-col {
@@ -97,4 +108,51 @@
   display: flex;
   flex-direction: column;
   margin-top: 100px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .approach-card {
+    margin-top: 50px;
+  }
+
+  .approach-card03,
+  .approach-card04 {
+    margin-top: 32px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .approach-card {
+    margin-top: 50px;
+  }
+
+  .approach-card02,
+  .approach-card03,
+  .approach-card04 {
+    margin-top: 32px !important;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .approach-card {
+    margin-top: 50px;
+  }
+
+  .approach-card02,
+  .approach-card03,
+  .approach-card04 {
+    margin-top: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .approach-card {
+    margin-top: 50px;
+  }
+
+  .approach-card02,
+  .approach-card03,
+  .approach-card04 {
+    margin-top: 32px !important;
+  }
 }

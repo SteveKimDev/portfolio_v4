@@ -17,7 +17,7 @@ const ProjectSection = () => {
 
     // section title animation
     gsap.fromTo(
-      [`.section-title`],
+      [`#project-section-title`],
       { y: '36px', opacity: 0, height: 0 },
       {
         y: '0px',
@@ -76,7 +76,10 @@ const ProjectSection = () => {
   return (
     <section id='project-section' className={Homepage.projectSection}>
       <div id='selected-projects-title-trigger'>
-        <h1 className='gradient-color section-title text-align-center'>
+        <h1
+          id='project-section-title'
+          className='gradient-color section-title text-align-center'
+        >
           Selected Projects
         </h1>
       </div>
