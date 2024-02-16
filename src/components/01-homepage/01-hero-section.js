@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import DkButton from '../00-reusable-components/dk-button';
 import * as Homepage from '../../styles/homepage.module.css';
 
 const HeroSection = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    // gsap.registerPlugin(ScrollTrigger);
 
     // Fade-in-Up Animation
     gsap.from(`.${Homepage.headlineDiv} > *`, {

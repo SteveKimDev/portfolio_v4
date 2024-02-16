@@ -92,6 +92,8 @@
 
 .about-section {
   height: 100vh;
+  padding: 4vw;
+  padding-right: 4vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,6 +229,8 @@
 
 /* PROJECT SECTION */
 .project-section {
+  padding: 4vw;
+  padding-right: 4vw;
   overflow: hidden;
   background-image: linear-gradient(
     to left,

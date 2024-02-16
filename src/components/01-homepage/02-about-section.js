@@ -115,7 +115,7 @@ const AboutSection = () => {
             business success.
           </p>
           <div className={`m-top-50 about-section-cta`}>
-            <DkButton to='/' text='Learn More About Me' />
+            <DkButton to='/about' text='Learn More About Me' />
           </div>
         </Col>
         <Col lg={5} md={6} sm={6} className={`relative ${Homepage.aboutCol2}`}>

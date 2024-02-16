@@ -7,7 +7,7 @@ const AboutSectionImg = () => {
   return (
     <>
       <StaticImage
-        src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1706635236/steve01_transparent_background-v4_iixkzk.webp'
+        src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1706635236/Portfolio%20website/steve01_transparent_background-v4_iixkzk.webp'
         alt='About section img'
         className={Homepage.aboutSectionImg}
       />

@@ -7,7 +7,7 @@ const Logo = () => {
     <>
       <Link to='/'>
         <StaticImage
-          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1701817301/logo-with-text__transparent-background_titr4e.webp'
+          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1701817301/Portfolio%20website/logo-with-text__transparent-background_titr4e.webp'
           alt='Logo'
           className='logo'
         />
