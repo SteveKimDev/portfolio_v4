@@ -162,6 +162,7 @@
 
 .about-section-img-div0 .about-section-img {
   background-color: #bacfe0;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

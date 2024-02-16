@@ -55,7 +55,7 @@ const ApproachSection = () => {
         <Col>
           <h1
             id='approach-section-title'
-            className='section-title gradient-color'
+            className='section-title gradient-color text-align-center'
           >
             Approach
           </h1>

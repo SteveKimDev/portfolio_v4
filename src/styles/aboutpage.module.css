@@ -19,6 +19,7 @@
   border-radius: 30px;
   width: 100%;
   height: auto;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -111,6 +112,10 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .approach-section {
+    padding-bottom: 50px;
+  }
+
   .approach-card {
     margin-top: 50px;
   }
@@ -122,6 +127,10 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .approach-section {
+    padding-bottom: 50px;
+  }
+
   .approach-card {
     margin-top: 50px;
   }
@@ -134,6 +143,10 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 767px) {
+  .approach-section {
+    padding-bottom: 50px;
+  }
+
   .approach-card {
     margin-top: 50px;
   }
@@ -146,6 +159,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .approach-section {
+    padding-bottom: 50px;
+  }
+
   .approach-card {
     margin-top: 50px;
   }
@@ -154,5 +171,85 @@
   .approach-card03,
   .approach-card04 {
     margin-top: 32px !important;
+  }
+}
+
+/* skills section */
+.skills-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.section-title-div {
+  padding-bottom: 100px;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  padding-bottom: 24px;
+}
+
+.marquee-div h2 {
+  font-size: 5vw;
+  font-weight: 600;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+}
+
+.marquee-div .marquee-separator {
+  width: 20px;
+  height: 20px;
+  background-color: #8ec8f3;
+  margin: 20px;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-title-div {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .section-title-div {
+    padding-bottom: 50px;
+  }
+
+  .marquee-div h2 {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .section-title-div {
+    padding-bottom: 50px;
+  }
+
+  .marquee-div h2 {
+    font-size: 7vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-title-div {
+    padding-bottom: 50px;
+  }
+
+  .marquee-div h2 {
+    font-size: 10vw;
   }
 }
