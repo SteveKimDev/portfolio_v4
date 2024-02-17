@@ -3,10 +3,11 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
-import * as Aboutpage from '../../styles/aboutpage.module.css';
 import Marquee01 from './03a-marquee1';
 import Marquee02 from './03b-marquee2';
 import Marquee03 from './03c-marquee3';
+
+import * as Aboutpage from '../../styles/aboutpage.module.css';
 
 const SkillsSection = () => {
   const marquee1Ref = useRef(null);
