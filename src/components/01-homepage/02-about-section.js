@@ -109,7 +109,7 @@ const AboutSection = () => {
           </h1>
           <p className={`primary-color ${Homepage.aboutSectionDescription}`}>
             With over six years in the industry, I have honed my skills in UX
-            design, information architecture,, content strategy, and business
+            design, information architecture, content strategy, and business
             analysis, creating intuitive and user-centric web and mobile
             solutions that significantly enhance user experiences and drive
             business success.

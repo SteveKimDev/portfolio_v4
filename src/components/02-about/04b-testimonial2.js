@@ -4,7 +4,7 @@ import * as Aboutpage from '../../styles/aboutpage.module.css';
 
 const Testimonial02 = () => {
   return (
-    <div className={`card ${Aboutpage.carouselDiv}`}>
+    <div className={`card `}>
       <p>
         Our company was in search of a new and updated web design and we found
         Steve Kim. Through his design and his efforts he was able to bring out

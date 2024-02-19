@@ -75,7 +75,24 @@ const SkillsSection = () => {
 
         scrollTrigger: {
           trigger: `#skills-section-title-trigger`,
-          start: 'top 80%',
+          start: 'top 70%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      [`.${Aboutpage.marqueeWrapper}`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        ease: 'power1.outIn',
+
+        scrollTrigger: {
+          trigger: `#marquee-trigger`,
+          start: 'top 70%',
           toggleActions: 'play none none reverse',
         },
       }
@@ -95,19 +112,19 @@ const SkillsSection = () => {
         </h1>
       </div>
 
-      {/* marquee 1 */}
-      <div ref={marquee1Ref} className={Aboutpage.marqueeWrapper}>
-        <Marquee01 />
-      </div>
-
-      {/* marquee 2 */}
-      <div ref={marquee2Ref} className={Aboutpage.marqueeWrapper}>
-        <Marquee02 />
-      </div>
-
-      {/* marquee 3 */}
-      <div ref={marquee3Ref} className={Aboutpage.marqueeWrapper}>
-        <Marquee03 />
+      <div id='marquee-trigger'>
+        {/* marquee 1 */}
+        <div ref={marquee1Ref} className={Aboutpage.marqueeWrapper}>
+          <Marquee01 />
+        </div>
+        {/* marquee 2 */}
+        <div ref={marquee2Ref} className={Aboutpage.marqueeWrapper}>
+          <Marquee02 />
+        </div>
+        {/* marquee 3 */}
+        <div ref={marquee3Ref} className={Aboutpage.marqueeWrapper}>
+          <Marquee03 />
+        </div>
       </div>
     </div>
   );

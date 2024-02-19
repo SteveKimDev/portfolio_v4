@@ -24,7 +24,7 @@ const ApproachSection = () => {
 
         scrollTrigger: {
           trigger: `#approach-section-title-trigger`,
-          start: 'top 80%',
+          start: 'top 70%',
           toggleActions: 'play none none reverse',
         },
       }

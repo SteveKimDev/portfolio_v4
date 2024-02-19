@@ -66,7 +66,24 @@ const TestimonialsSection = () => {
 
         scrollTrigger: {
           trigger: `#testimonials-section-title-trigger`,
-          start: 'top 80%',
+          start: 'top 70%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      [`.${Aboutpage.carouselDiv}`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        ease: 'power1.outIn',
+
+        scrollTrigger: {
+          trigger: `.${Aboutpage.carouselWrapper}`,
+          start: 'top 70%',
           toggleActions: 'play none none reverse',
         },
       }
@@ -93,16 +110,23 @@ const TestimonialsSection = () => {
       {/* carousel */}
       <div ref={carouselRef} className={Aboutpage.carouselWrapper}>
         {/* testimonial 1 */}
-        <Testimonial01 />
-
+        <div className={`${Aboutpage.carouselDiv}`}>
+          <Testimonial01 />
+        </div>
         {/* testimonial 2 */}
-        <Testimonial02 />
+        <div className={`${Aboutpage.carouselDiv}`}>
+          <Testimonial02 />
+        </div>
 
         {/* testimonial 3 */}
-        <Testimonial03 />
+        <div className={`${Aboutpage.carouselDiv}`}>
+          <Testimonial03 />
+        </div>
 
         {/* testimonial 4 */}
-        <Testimonial04 />
+        <div className={`${Aboutpage.carouselDiv}`}>
+          <Testimonial04 />
+        </div>
       </div>
       {/* <button ref={prevButtonRef} className='prev'>
         prev
