@@ -23,7 +23,7 @@ const Footer = () => {
         scrollTrigger: {
           trigger: '#footer-trigger',
           start: 'top center',
-          toggleActions: 'play none none reverse',
+          toggleActions: 'play none none reset',
         },
       }
     );

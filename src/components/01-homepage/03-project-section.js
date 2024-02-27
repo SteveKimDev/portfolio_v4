@@ -29,7 +29,7 @@ const ProjectSection = () => {
         scrollTrigger: {
           trigger: '#selected-projects-title-trigger',
           start: 'top 70%',
-          toggleActions: 'play none none reverse',
+          toggleActions: 'play none none reset',
         },
       }
     );

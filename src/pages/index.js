@@ -40,7 +40,7 @@ const IndexPage = () => {
         trigger: aboutSectionRef.current,
         start: 'top 80%',
         end: 'top top',
-        toggleActions: 'play none none reverse',
+        toggleActions: 'play none none reset',
         scrub: true,
       },
       autoAlpha: 0,

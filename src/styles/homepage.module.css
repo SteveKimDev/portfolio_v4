@@ -294,22 +294,36 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: auto;
 }
 
 .project-div .project-title {
+  text-align: center;
+  line-height: 1;
+}
+
+.project-div .project-title h2 {
+  color: #ffffff;
+  font-size: 5vw;
+  line-height: 1.2;
+}
+
+.project-div .project-title p {
   position: relative;
   display: block;
   color: #ffffff;
-  font-size: 5vw;
-  text-align: center;
+  font-size: 1.5vw;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1921px) {
-  .project-div .project-title {
+  .project-div .project-title h2 {
     font-size: 6.5rem;
+  }
+  .project-div .project-title p {
+    font-size: 2rem;
   }
 }
 
@@ -354,7 +368,10 @@
     border-radius: 15px;
   }
 
-  .project-div .project-title {
+  .project-div .project-title h2 {
     font-size: 2rem;
+  }
+  .project-div .project-title p {
+    display: none;
   }
 }

@@ -45,7 +45,7 @@ const TestimonialsSection = () => {
     // });
 
     // prevButtonRef.current.addEventListener('click', () => {
-    //   tl.current.timeScale(2).reverse();
+    //   tl.current.timeScale(2).reset();
     // });
 
     // Pause and resume on hover
@@ -67,7 +67,7 @@ const TestimonialsSection = () => {
         scrollTrigger: {
           trigger: `#testimonials-section-title-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reverse',
+          toggleActions: 'play none none reset',
         },
       }
     );
@@ -78,13 +78,13 @@ const TestimonialsSection = () => {
       {
         opacity: 1,
         duration: 1,
-        delay: 1,
+        delay: 1.5,
         ease: 'power1.outIn',
 
         scrollTrigger: {
           trigger: `.${Aboutpage.carouselWrapper}`,
           start: 'top 70%',
-          toggleActions: 'play none none reverse',
+          toggleActions: 'play none none reset',
         },
       }
     );

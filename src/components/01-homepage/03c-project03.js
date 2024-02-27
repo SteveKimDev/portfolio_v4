@@ -13,7 +13,10 @@ const Project03 = () => {
           alt='project cover img'
           className={Homepage.projectImg}
         />
-        <h2 className={Homepage.projectTitle}>First String Digital</h2>
+        <div className={Homepage.projectTitle}>
+          <h2>First String Digital</h2>
+          <p>UX/UI Design | Development</p>
+        </div>
       </Link>
     </>
   );

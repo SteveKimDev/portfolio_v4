@@ -13,7 +13,10 @@ const Project04 = () => {
           alt='project cover img'
           className={Homepage.projectImg}
         />
-        <h2 className={Homepage.projectTitle}>English Book Ladder</h2>
+        <div className={Homepage.projectTitle}>
+          <h2>English Book Ladder</h2>
+          <p>UX/UI Design | Development</p>
+        </div>
       </Link>
     </>
   );

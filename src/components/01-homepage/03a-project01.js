@@ -7,17 +7,16 @@ import * as Homepage from '../../styles/homepage.module.css';
 const Project01 = () => {
   return (
     <>
-      <Link to='/'>
+      <Link to='/numbersusa-website-project/'>
         <StaticImage
           src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707861421/NumbersUSA-web/NUSA_cover_img_n9bajj.webp'
           alt='project cover img'
           className={Homepage.projectImg}
         />
-        <h2 className={Homepage.projectTitle}>
-          NumbersUSA
-          <br />
-          Website
-        </h2>
+        <div className={Homepage.projectTitle}>
+          <h2> NumbersUSA</h2>
+          <p>UX/UI Design | Information Architecture | Content Strategy</p>
+        </div>
       </Link>
     </>
   );

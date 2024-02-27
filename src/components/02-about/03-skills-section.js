@@ -76,7 +76,7 @@ const SkillsSection = () => {
         scrollTrigger: {
           trigger: `#skills-section-title-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reverse',
+          toggleActions: 'play none none reset',
         },
       }
     );
@@ -87,13 +87,13 @@ const SkillsSection = () => {
       {
         opacity: 1,
         duration: 1,
-        delay: 1,
+        delay: 1.5,
         ease: 'power1.outIn',
 
         scrollTrigger: {
           trigger: `#marquee-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reverse',
+          toggleActions: 'play none none reset',
         },
       }
     );
