@@ -156,7 +156,7 @@
 }
 
 .about-section-img-div .about-section-img {
-  border-radius: 30px;
+  border-radius: 15px;
   width: 80%;
   transition: transform 0.3s ease-out;
   transform-origin: center;
@@ -250,7 +250,6 @@
 
   .about-section-img-div .about-section-img {
     width: 60%;
-    border-radius: 15px;
   }
 
   .about-section-img-div1,
@@ -283,7 +282,7 @@
   transform: translate(-50%, -50%);
   width: 80%;
   height: auto;
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
 }
 
@@ -294,9 +293,10 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.35);
   width: 100%;
   height: auto;
+  border-radius: 14px;
 }
 
 .project-div .project-title {
@@ -360,12 +360,10 @@
 
   .project-img {
     width: 100%;
-    border-radius: 15px;
   }
 
   .project-img::after {
     height: 35vh;
-    border-radius: 15px;
   }
 
   .project-div .project-title h2 {

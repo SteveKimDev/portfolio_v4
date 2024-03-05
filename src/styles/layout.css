@@ -6,7 +6,6 @@
 html {
   /* controlls Link smooth scrolling */
   scroll-behavior: auto !important;
-  background-color: red;
   overflow-x: hidden;
 }
 
@@ -315,7 +314,7 @@ section {
   color: #ffffff;
   background-color: transparent;
   border: solid #ffffff 1px;
-  border-radius: 30px;
+  border-radius: 15px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
   padding: 32px;
 }
@@ -362,10 +361,6 @@ section {
 }
 
 @media (max-width: 600px) {
-  .card {
-    border-radius: 15px;
-  }
-
   .card h2 {
     font-size: 7vw;
   }
