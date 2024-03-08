@@ -1,76 +1,236 @@
-.intro-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.hero-section {
+  /* padding-bottom: 100px; */
 }
 
-.section-title {
-  line-height: 0.8;
-}
-
-.intro-vid-div {
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-.intro-video {
-  width: 65%;
-  display: block;
-  margin: 0 auto;
-  filter: drop-shadow(0px 8px 32px rgba(031, 38, 135, 0.5));
-  border-radius: 15px;
-}
-
-.card-col {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.intro-info-div {
+.hero-copy-container {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
-  margin-right: 16px;
+  justify-content: center;
+  height: 800px;
 }
 
-.intro-info-div h5 {
+.hero-title {
+  font-size: 6.5vw;
+  line-height: normal;
+}
+
+.hero-description {
+  margin-top: -25px;
+}
+
+.hero-subtitle {
   font-weight: 300;
-  letter-spacing: normal;
 }
 
-.screenshot-div {
-  background-color: #ccd0cf;
-  padding: 80px 120px;
-  border-radius: 15px;
-  margin-bottom: 25px;
+.hero-subdescription {
+  margin-top: -10px;
 }
 
-.screenshot-image {
+.hero-mobile-img {
+  width: 180px;
+  transform: rotate(25deg);
+  filter: drop-shadow(0px 8px 32px rgba(31, 38, 135, 0.5));
+}
+
+.hero-mobile-img1 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.hero-mobile-img2 {
+  position: absolute;
+  top: 400px;
+  left: 160px;
+}
+
+.hero-mobile-img3 {
+  position: absolute;
+  top: 65px;
+  left: 315px;
+}
+
+.hero-mobile-img4 {
+  position: absolute;
+  top: 360px;
+  left: 380px;
+}
+
+.detail-div-center-align {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.detail-div h2 {
+  font-weight: 300;
+}
+
+.detail-div p,
+.detail-div ul {
+  margin-top: -10px;
+}
+
+.detail-img {
   border-radius: 15px;
 }
 
 @media (min-width: 1921px) {
+  .hero-title {
+    font-size: 8rem;
+    line-height: normal;
+  }
 }
 
 @media (max-width: 1199px) {
-  .intro-vid-div {
-    padding-top: 25px;
-    padding-bottom: 50px;
+  .hero-copy-container {
+    height: 668px;
   }
 
-  .intro-video {
-    width: 100%;
+  .hero-mobile-img {
+    width: 150px;
   }
 
-  .card-col {
-    margin-top: 32px;
+  .hero-mobile-img1 {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+  }
+
+  .hero-mobile-img2 {
+    position: absolute;
+    top: 350px;
+    left: 120px;
+  }
+
+  .hero-mobile-img3 {
+    position: absolute;
+    top: 70px;
+    left: 250px;
+  }
+
+  .hero-mobile-img4 {
+    position: absolute;
+    top: 320px;
+    left: 300px;
   }
 }
 
 @media (max-width: 991px) {
-  .intro-vid-div {
-    padding-bottom: 25px;
+  .hero-col1 {
+    order: 2;
+  }
+
+  .hero-col2 {
+    order: 1;
+    height: 67vh;
+  }
+
+  .hero-mobile-img1 {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+  }
+
+  .hero-mobile-img2 {
+    position: absolute;
+    top: 350px;
+    left: 140px;
+  }
+
+  .hero-mobile-img3 {
+    position: absolute;
+    top: 70px;
+    left: 270px;
+  }
+
+  .hero-mobile-img4 {
+    position: absolute;
+    top: 320px;
+    left: 320px;
+  }
+
+  .hero-copy-container {
+    display: block;
+    flex-direction: inherit;
+    justify-content: inherit;
+    height: auto;
+  }
+
+  .hero-title {
+    font-size: 5rem;
+    line-height: normal;
+  }
+
+  .detail-div-center-align {
+    position: relative;
+    top: auto;
+    transform: translateY(0%);
+  }
+
+  .detail-div {
+    margin-bottom: 25px;
+  }
+
+  .detail-div h2 {
+    text-align: left !important;
+  }
+
+  .detail-div p {
+    text-align: left !important;
+  }
+
+  .order1 {
+    order: 1;
+  }
+
+  .order2 {
+    order: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-col2 {
+    height: 60vh;
   }
 }
 
 @media (max-width: 600px) {
+  .hero-col2 {
+    height: 68vh;
+  }
+
+  .hero-mobile-img {
+    width: 135px;
+  }
+
+  .hero-mobile-img1 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+  }
+
+  .hero-mobile-img2 {
+    position: absolute;
+    top: 325px;
+    left: 75px;
+  }
+
+  .hero-mobile-img3 {
+    position: absolute;
+    top: 75px;
+    left: 190px;
+  }
+
+  .hero-mobile-img4 {
+    position: absolute;
+    top: 310px;
+    left: 230px;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    line-height: normal;
+  }
 }

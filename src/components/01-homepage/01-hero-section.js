@@ -1,37 +1,20 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import DkButton from '../00-reusable-components/dk-button';
 import * as Homepage from '../../styles/homepage.module.css';
 
 const HeroSection = () => {
   useEffect(() => {
-    // gsap.registerPlugin(ScrollTrigger);
-
     // Fade-in-Up Animation
     gsap.from(`.${Homepage.headlineDiv} > *`, {
       y: 50,
       height: 0,
       opacity: 0,
-      stagger: 0.4,
+      stagger: 0.3,
       duration: 1,
       ease: 'power1.outIn',
     });
-
-    // scroll out animation
-    // gsap.to(`.${Homepage.headlineDiv} > *`, {
-    //   scrollTrigger: {
-    //     trigger: `.${Homepage.heroSection}`,
-    //     start: 'bottom 90%',
-    //     end: 'bottom center',
-    //     scrub: true,
-    //   },
-    //   scale: 0.8,
-    //   stagger: 0.5,
-    //   duration: 2,
-    //   ease: 'power1.outIn',
-    // });
   }, []);
   return (
     <div className={Homepage.heroSection}>

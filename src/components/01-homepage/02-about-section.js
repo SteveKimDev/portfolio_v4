@@ -27,7 +27,7 @@ const AboutSection = () => {
         duration: 1,
         delay: 0.5,
         ease: 'power1.outIn',
-        stagger: 0.5,
+        stagger: 0.3,
 
         scrollTrigger: {
           trigger: '#about-row-trigger',

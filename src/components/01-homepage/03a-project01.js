@@ -7,9 +7,9 @@ import * as Homepage from '../../styles/homepage.module.css';
 const Project01 = () => {
   return (
     <>
-      <Link to='/numbersusa-website-project/'>
+      <Link to='/numbersusa/'>
         <StaticImage
-          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707861421/NumbersUSA-web/NUSA_cover_img_n9bajj.webp'
+          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833959/NUSA/NUSA_cover_img_gt9mkf.webp'
           alt='project cover img'
           className={Homepage.projectImg}
         />
