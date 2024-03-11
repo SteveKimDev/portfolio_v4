@@ -19,7 +19,6 @@ const ResearchRow = () => {
         y: 0,
         opacity: 1,
         duration: 1,
-        delay: 0.5,
         ease: 'power1.outIn',
 
         scrollTrigger: {

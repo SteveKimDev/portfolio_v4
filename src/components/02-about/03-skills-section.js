@@ -20,28 +20,24 @@ const SkillsSection = () => {
     // Function to create a marquee effect
     const createMarquee = (wrapperRef, duration, direction = 'left') => {
       const marqueeWrapper = wrapperRef.current;
-      // Make sure marqueeDiv class is correctly targeted within each Marquee component
       const marqueeDivs = gsap.utils.toArray(
         `.${Aboutpage.marqueeDiv}`,
         marqueeWrapper
       );
 
-      // Calculate total width after clones are appended for accurate measurement
       let totalWidth = marqueeDivs.reduce(
         (acc, div) => acc + div.offsetWidth,
         0
       );
 
-      // Append clones for a continuous loop effect
       marqueeDivs.forEach((div) => {
         const clone = div.cloneNode(true);
         marqueeWrapper.appendChild(clone);
       });
 
-      // Recalculate totalWidth to include clones
       totalWidth *= 2;
 
-      const animation = gsap.to(marqueeWrapper, {
+      gsap.to(marqueeWrapper, {
         x:
           direction === 'left'
             ? `-=${totalWidth / 2}px`
@@ -50,18 +46,14 @@ const SkillsSection = () => {
         duration: duration,
         repeat: -1,
       });
-
-      // Add event listeners to pause and resume on hover
-      marqueeWrapper.addEventListener('mouseenter', () => animation.pause());
-      marqueeWrapper.addEventListener('mouseleave', () => animation.resume());
     };
 
     // Initialize marquees
-    createMarquee(marquee1Ref, 20, 'left'); // Adjust direction and speed as needed
-    createMarquee(marquee2Ref, 20, 'left'); // Second marquee goes right to left
-    createMarquee(marquee3Ref, 15, 'left'); // Adjust direction and speed as needed
+    createMarquee(marquee1Ref, 50, 'left');
+    createMarquee(marquee2Ref, 50, 'left');
+    createMarquee(marquee3Ref, 50, 'left');
 
-    // section title animation
+    // Section title animation
     gsap.fromTo(
       [`#skills-section-title`],
       { y: 36, opacity: 0, height: 0 },
@@ -72,7 +64,6 @@ const SkillsSection = () => {
         duration: 1,
         delay: 0.5,
         ease: 'power1.outIn',
-
         scrollTrigger: {
           trigger: `#skills-section-title-trigger`,
           start: 'top 70%',
@@ -89,7 +80,6 @@ const SkillsSection = () => {
         duration: 1,
         delay: 1.5,
         ease: 'power1.outIn',
-
         scrollTrigger: {
           trigger: `#marquee-trigger`,
           start: 'top 70%',
