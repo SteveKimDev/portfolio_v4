@@ -48,7 +48,7 @@ const InfoArchRow = () => {
             </p>
           </div>
         </Col>
-        <Col xl={12}>
+        <Col xl={{ span: 10, offset: 1 }}>
           <div className={`m-top-25 tablet-m-top-0`}>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709855286/NUSA/sitemap_m8rnd0.webp'

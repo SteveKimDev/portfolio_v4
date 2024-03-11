@@ -47,7 +47,7 @@ const DesignSystemRow = () => {
         <Col lg={{ span: 4, offset: 1 }} md={6}>
           <div style={{ padding: '8px' }}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709858724/NUSA/design_system_-_color_ab8zas.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193722/NUSA/design_system_-_color_ui8tei.webp'
               alt='design system img'
               className={Projectpage.detailImg}
             />
@@ -56,7 +56,7 @@ const DesignSystemRow = () => {
         <Col lg={4} md={6}>
           <div style={{ padding: '8px' }}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709858724/NUSA/design_system_-_typograpghy_pkiikk.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193723/NUSA/design_system_-_typograpghy_tivwpp.webp'
               alt='design system img'
               className={Projectpage.detailImg}
             />

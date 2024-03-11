@@ -4,7 +4,7 @@ import ResearchRow from './02a-research-row';
 import InfoArchRow from './02b-info-arch-row';
 import LayoutTemplateRow from './02c-layout-template-row';
 import DesignSystemRow from './02d-design-system-row';
-// import ProjectCarousel from './02e-project-carousel';
+import UIDesign from './02e-ui-design';
 
 const DetailsSection = () => {
   return (
@@ -22,7 +22,7 @@ const DetailsSection = () => {
       <DesignSystemRow />
 
       {/* row 5 */}
-      {/* <ProjectCarousel /> */}
+      <UIDesign />
     </section>
   );
 };
