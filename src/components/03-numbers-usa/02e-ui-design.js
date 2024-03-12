@@ -28,53 +28,27 @@ const UIDesign = () => {
       }
     );
 
-    const process = document.querySelector('.horizontal-scroll-container');
-    if (typeof process != 'undefined' && process != null) {
-      let sections = gsap.utils.toArray('.scroll-item');
-      gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: 'none',
-        scrollTrigger: {
-          trigger: process,
-          markers: false,
-          scrub: 1,
-          pin: true,
-          snap: 1 / (sections.length - 1),
-          end: () =>
-            '+=' +
-            document.querySelector('.horizontal-scroll-container').offsetWidth,
-        },
-      });
-    }
-
-    // Intersection Observer for auto-playing videos
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.play();
-          } else {
-            entry.target.pause();
-          }
-        });
+    // horizontal scroll
+    gsap.to('.scroll-wrap', {
+      x: () =>
+        -(
+          document.querySelector('.scroll-wrap').scrollWidth -
+          document.documentElement.clientWidth
+        ) + 'px',
+      ease: 'power1.outIn',
+      scrollTrigger: {
+        trigger: '.horizontal-scroll-container',
+        pin: true,
+        scrub: 1,
+        markers: true,
+        start: 'center center',
+        end: () => '+=' + document.querySelector('.scroll-wrap').offsetWidth,
       },
-      {
-        threshold: 1.0, // 100% of the item is visible
-      }
-    );
-
-    document.querySelectorAll('.scroll-item video').forEach((video) => {
-      observer.observe(video);
     });
-
-    // Cleanup observer on component unmount
-    return () => {
-      observer.disconnect();
-    };
   }, []);
 
   return (
-    <Row className={`m-top-100`}>
+    <Row className={`tablet-m-top-100`}>
       <Col
         xl={{ span: 6, offset: 3 }}
         lg={{ span: 8, offset: 2 }}
@@ -82,17 +56,20 @@ const UIDesign = () => {
       >
         <div className={` ${Projectpage.detailDiv}`}>
           <h2 className={`gradient-color text-align-center`}>
-            Information Architecture &amp; Content Strategy
+            Website and Mobile App Products
           </h2>
           <p className={`text-align-center`}>
-            Refining the information architecture with a detailed sitemap
-            enhances intuitive navigation and ensures content is easily
-            discoverable.
+            We utilized insights from our research and content strategy to meet
+            NUSA's business objectives. We carefully selected color schemes,
+            typography, and iconography that embodied the brand's identity,
+            while template layouts and a comprehensive design system ensured
+            consistent, visually engaging designs that strengthened brand
+            identity and user engagement across the website and mobile app.
           </p>
         </div>
       </Col>
 
-      <Col sm={12}>
+      <Col sm={12} className={`m-top-50`}>
         <div
           className={`horizontal-scroll-container ${Projectpage.horizontalScrollContainer}`}
         >

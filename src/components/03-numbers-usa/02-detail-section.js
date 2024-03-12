@@ -10,19 +10,30 @@ const DetailsSection = () => {
   return (
     <section>
       {/* row 1 */}
-      <ResearchRow />
+      <UIDesign />
 
       {/* row 2 */}
-      <InfoArchRow />
+      <ResearchRow />
 
       {/* row 3 */}
-      <LayoutTemplateRow />
+      <InfoArchRow />
 
       {/* row 4 */}
-      <DesignSystemRow />
+      <LayoutTemplateRow />
 
       {/* row 5 */}
-      <UIDesign />
+      <DesignSystemRow />
+
+      <div className='text-align-center m-top-100'>
+        <a
+          href='https://docs.google.com/presentation/d/1W6wREAbKEIhWbmRACw8QzHFqug-P_XRSix1djH5m4pw/edit?usp=sharing'
+          target='_blank'
+          rel='noreferrer'
+          className='dk-button'
+        >
+          <span>View Full Case Study</span>
+        </a>
+      </div>
     </section>
   );
 };

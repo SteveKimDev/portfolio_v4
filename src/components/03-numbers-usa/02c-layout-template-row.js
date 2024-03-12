@@ -50,9 +50,9 @@ const LayoutTemplateRow = () => {
           <div
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
           >
-            <h2 className={`gradient-color`}>Website Layout Template Design</h2>
+            <h2 className={`gradient-color`}>Template Layout Design</h2>
             <p>
-              The layout template design introduced a structured approach that
+              The template layout designs introduced a structured approach that
               ensured usability, aesthetic consistency, and strategic alignment
               with the content framework.
             </p>

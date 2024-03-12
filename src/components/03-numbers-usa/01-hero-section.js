@@ -19,14 +19,13 @@ const HeroSection = () => {
     // Fade-in-Up Animation
     gsap.from(
       [
-        `.${Projectpage.heroMobileImg1}`,
+        `.${Projectpage.heroMobileImg4}`,
         `.${Projectpage.heroMobileImg3}`,
         `.${Projectpage.heroMobileImg2}`,
-        `.${Projectpage.heroMobileImg4}`,
+        `.${Projectpage.heroMobileImg1}`,
       ],
       {
         y: 16,
-        x: -16,
         opacity: 0,
         stagger: 0.5,
         duration: 1,
@@ -35,7 +34,7 @@ const HeroSection = () => {
     );
   }, []);
   return (
-    <section className={`${Projectpage.heroSection}`}>
+    <section>
       <Row>
         <Col lg={6} className={`relative ${Projectpage.heroCol1}`}>
           <div className={`${Projectpage.heroCopyContainer}`}>
@@ -78,7 +77,7 @@ const HeroSection = () => {
         <Col lg={6} className={`relative ${Projectpage.heroCol2}`}>
           <div className={`${Projectpage.heroMobileImg1}`}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833981/NUSA/1_r44qjz.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833979/NUSA/4_vhhifv.webp'
               alt='project hero img'
               className={Projectpage.heroMobileImg}
             />
@@ -94,7 +93,7 @@ const HeroSection = () => {
 
           <div className={`${Projectpage.heroMobileImg3}`}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833978/NUSA/3_qjsnab.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833981/NUSA/1_r44qjz.webp'
               alt='project hero img'
               className={Projectpage.heroMobileImg}
             />
@@ -102,7 +101,7 @@ const HeroSection = () => {
 
           <div className={`${Projectpage.heroMobileImg4}`}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833979/NUSA/4_vhhifv.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833978/NUSA/3_qjsnab.webp'
               alt='project hero img'
               className={Projectpage.heroMobileImg}
             />

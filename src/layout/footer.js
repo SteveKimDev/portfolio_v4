@@ -10,19 +10,18 @@ const Footer = () => {
     // text animation
     gsap.fromTo(
       [`.footer-header-div`, `.footer-link-div`],
-      { y: '36px', opacity: 0, height: 0 },
+      { y: '32px', opacity: 0 },
       {
         y: '0px',
         opacity: 1,
-        height: 'auto',
-        duration: 1,
-        stagger: 0.8,
+        duration: 1.5,
+        stagger: 0.5,
         ease: 'power1.outIn',
 
         // ScrollTrigger-specific properties
         scrollTrigger: {
           trigger: '#footer-trigger',
-          start: 'top center',
+          start: 'top 60%',
           toggleActions: 'play none none reset',
         },
       }
