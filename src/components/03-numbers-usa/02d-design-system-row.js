@@ -30,7 +30,7 @@ const DesignSystemRow = () => {
     );
   }, []);
   return (
-    <>
+    <section>
       <Row className={`m-top-100`}>
         <Col lg={3} md={12} className={`relative`} id='detail-trigger-4'>
           <div
@@ -63,7 +63,7 @@ const DesignSystemRow = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </section>
   );
 };
 

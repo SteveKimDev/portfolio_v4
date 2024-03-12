@@ -8,7 +8,7 @@ import UIDesign from './02e-ui-design';
 
 const DetailsSection = () => {
   return (
-    <section>
+    <div>
       {/* row 1 */}
       <UIDesign />
 
@@ -34,7 +34,7 @@ const DetailsSection = () => {
           <span>View Full Case Study</span>
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -30,7 +30,7 @@ const LayoutTemplateRow = () => {
     );
   }, []);
   return (
-    <>
+    <section>
       <Row className={`m-top-100`}>
         <Col xl={8} lg={7} className={`${Projectpage.order2}`}>
           <div>
@@ -59,7 +59,7 @@ const LayoutTemplateRow = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </section>
   );
 };
 

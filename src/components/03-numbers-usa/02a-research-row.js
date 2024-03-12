@@ -30,7 +30,7 @@ const ResearchRow = () => {
     );
   }, []);
   return (
-    <>
+    <section>
       <Row className={`m-top-100`}>
         <Col lg={4} id='detail-trigger-1' className={`relative`}>
           <div
@@ -56,7 +56,7 @@ const ResearchRow = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </section>
   );
 };
 

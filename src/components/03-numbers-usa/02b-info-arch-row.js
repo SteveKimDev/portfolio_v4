@@ -30,7 +30,7 @@ const InfoArchRow = () => {
     );
   }, []);
   return (
-    <>
+    <section>
       <Row className={`m-top-100`}>
         <Col
           xl={{ span: 6, offset: 3 }}
@@ -58,7 +58,7 @@ const InfoArchRow = () => {
           </div>
         </Col>
       </Row>
-    </>
+    </section>
   );
 };
 

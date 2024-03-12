@@ -75,6 +75,30 @@
   border-radius: 15px;
 }
 
+.horizontal-scroll-container {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.scroll-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  padding: 0 24px;
+}
+
+.scroll-item video {
+  width: 1000px;
+  height: 562.5px !important;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: auto;
+  display: block;
+}
+
 @media (min-width: 1921px) {
   .hero-title {
     font-size: 8rem;
@@ -141,6 +165,11 @@
     position: absolute;
     top: 200px;
     right: 24vw;
+  }
+
+  .scroll-item video {
+    width: 800px;
+    height: 450px !important;
   }
 }
 
@@ -216,6 +245,10 @@
   .order2 {
     order: 2;
   }
+  .scroll-item video {
+    width: 650px;
+    height: 365.63px !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -284,5 +317,10 @@
   .hero-title {
     font-size: 3.75rem;
     line-height: normal;
+  }
+
+  .scroll-item video {
+    width: 375px;
+    height: 211px !important;
   }
 }
