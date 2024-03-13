@@ -7,13 +7,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import * as Projectpage from '../../styles/project.module.css';
 
-const InfoArchRow = () => {
+const WebsiteAuditRow = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     // fadeInUp animation
     gsap.fromTo(
-      [`#detail-trigger-2`],
+      [`#detail-trigger-1`],
       { y: 32, opacity: 0 },
       {
         y: 0,
@@ -22,7 +22,7 @@ const InfoArchRow = () => {
         ease: 'power1.outIn',
 
         scrollTrigger: {
-          trigger: `#detail-trigger-2`,
+          trigger: `#detail-trigger-1`,
           start: 'top 70%',
           toggleActions: 'play none none none',
         },
@@ -30,7 +30,7 @@ const InfoArchRow = () => {
     );
 
     gsap.fromTo(
-      [`#detail-img-trigger-2`],
+      [`#detail-img-trigger-1`],
       { opacity: 0 },
       {
         opacity: 1,
@@ -38,7 +38,7 @@ const InfoArchRow = () => {
         ease: 'power1.outIn',
 
         scrollTrigger: {
-          trigger: `#detail-img-trigger-2`,
+          trigger: `#detail-img-trigger-1`,
           start: 'top 70%',
           toggleActions: 'play none none none',
         },
@@ -48,28 +48,26 @@ const InfoArchRow = () => {
   return (
     <section>
       <Row className={`m-top-100`}>
-        <Col
-          xl={{ span: 6, offset: 3 }}
-          lg={{ span: 8, offset: 2 }}
-          id='detail-trigger-2'
-        >
-          <div className={` ${Projectpage.detailDiv}`}>
-            <h2 className={`gradient-color text-align-center`}>
-              Information Architecture and Content Strategy
-            </h2>
-            <p className={`text-align-center`}>
-              Refining the information architecture with a detailed sitemap
-              enhances intuitive navigation and ensures content is easily
-              discoverable.
+        <Col lg={4} id='detail-trigger-1' className={`relative`}>
+          <div
+            className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
+          >
+            <h2 className={`gradient-color`}>Website Content Audit</h2>
+
+            <p>
+              Conducted a thorough audit of the legacy website (over 500 pages),
+              which involved scrutinizing not only the page hierarchy, page
+              templates, component types, and media asset types but also
+              uncovering any inconsistencies, or opportunities for optimization.
             </p>
           </div>
         </Col>
-        <Col xl={{ span: 10, offset: 1 }} id='detail-img-trigger-2'>
-          <div className={`m-top-25 tablet-m-top-0`}>
+        <Col lg={{ span: 7, offset: 1 }} id='detail-trigger-1'>
+          <div>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709855286/NUSA/sitemap_m8rnd0.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710359705/ICBC/web-audit_yii7rc.webp'
               placeholder='blurred'
-              alt='sitemap img'
+              alt='persona img'
               className={Projectpage.detailImg}
             />
           </div>
@@ -79,4 +77,4 @@ const InfoArchRow = () => {
   );
 };
 
-export default InfoArchRow;
+export default WebsiteAuditRow;

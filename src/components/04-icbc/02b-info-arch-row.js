@@ -55,19 +55,20 @@ const InfoArchRow = () => {
         >
           <div className={` ${Projectpage.detailDiv}`}>
             <h2 className={`gradient-color text-align-center`}>
-              Information Architecture and Content Strategy
+              Defining the Information Architecture
             </h2>
             <p className={`text-align-center`}>
-              Refining the information architecture with a detailed sitemap
-              enhances intuitive navigation and ensures content is easily
-              discoverable.
+              Created a detailed sitemap, defined page templates, tracked
+              sunsetted pages and media assets, made needed template and
+              component redesigns, and contributed to Contentful CMS content
+              model development.
             </p>
           </div>
         </Col>
         <Col xl={{ span: 10, offset: 1 }} id='detail-img-trigger-2'>
           <div className={`m-top-25 tablet-m-top-0`}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709855286/NUSA/sitemap_m8rnd0.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710360210/ICBC/sitemap_xqrpfi.webp'
               placeholder='blurred'
               alt='sitemap img'
               className={Projectpage.detailImg}

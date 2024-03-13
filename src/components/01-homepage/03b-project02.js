@@ -7,7 +7,7 @@ import * as Homepage from '../../styles/homepage.module.css';
 const Project02 = () => {
   return (
     <>
-      <Link to='/'>
+      <Link to='/icbc'>
         <StaticImage
           src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707861375/ICBC/ICBC-cover-image_bdr73p.webp'
           placeholder='blurred'

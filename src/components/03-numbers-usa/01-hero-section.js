@@ -52,7 +52,7 @@ const HeroSection = () => {
             </div>
             <div>
               <h2 className={`gradient-color ${Projectpage.heroSubtitle}`}>
-                Product TYpe
+                Role
               </h2>
               <p className={`${Projectpage.heroSubdescription}`}>
                 Senior Product Designer
@@ -60,7 +60,7 @@ const HeroSection = () => {
             </div>
             <div>
               <h2 className={`gradient-color ${Projectpage.heroSubtitle}`}>
-                Role
+                Product Type
               </h2>
               <p className={`${Projectpage.heroSubdescription}`}>
                 Website, IOS, and Android Mobile App
