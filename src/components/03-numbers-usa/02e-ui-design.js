@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Row, Col } from 'react-bootstrap';
@@ -7,6 +7,8 @@ import { Row, Col } from 'react-bootstrap';
 import * as Projectpage from '../../styles/project.module.css';
 
 const UIDesign = () => {
+  const videoRefs = useRef([]);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -42,10 +44,42 @@ const UIDesign = () => {
         scrub: 1,
         start: 'center center',
         end: 'bottom top',
-        markers: true,
       },
     });
+
+    // Intersection Observer for videos
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.play();
+          } else {
+            entry.target.pause();
+          }
+        });
+      },
+      {
+        threshold: 0.9, // 100% of the target's visibility
+      }
+    );
+
+    // Capture the current refs in a variable
+    const currentRefs = videoRefs.current;
+
+    currentRefs.forEach((video) => observer.observe(video));
+
+    // Use the captured refs for cleanup
+    return () => {
+      currentRefs.forEach((video) => observer.unobserve(video));
+    };
   }, []);
+
+  // Function to add video ref
+  const addVideoRef = (el) => {
+    if (el && !videoRefs.current.includes(el)) {
+      videoRefs.current.push(el);
+    }
+  };
 
   return (
     <>
@@ -78,7 +112,7 @@ const UIDesign = () => {
             <div className={`scroll-wrap ${Projectpage.scrollWrap}`}>
               {/* item 1 */}
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
-                <video autoPlay muted playsInline>
+                <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
                     src='https://res.cloudinary.com/stevekim/video/upload/v1710193302/NUSA/video-4_vevtoy.mp4'
                     type='video/mp4'
@@ -88,7 +122,7 @@ const UIDesign = () => {
 
               {/* item 2 */}
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
-                <video autoPlay muted playsInline>
+                <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
                     src='https://res.cloudinary.com/stevekim/video/upload/v1710193289/NUSA/video-2_emqtwg.mp4'
                     type='video/mp4'
@@ -98,7 +132,7 @@ const UIDesign = () => {
 
               {/* item 3 */}
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
-                <video autoPlay muted playsInline>
+                <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
                     src='https://res.cloudinary.com/stevekim/video/upload/v1710193278/NUSA/video-1_nj26s3.mp4'
                     type='video/mp4'
@@ -108,7 +142,7 @@ const UIDesign = () => {
 
               {/* item 4 */}
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
-                <video autoPlay muted playsInline>
+                <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
                     src='https://res.cloudinary.com/stevekim/video/upload/v1710193294/NUSA/video-3_doh6fu.mp4'
                     type='video/mp4'

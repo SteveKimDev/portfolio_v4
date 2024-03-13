@@ -49,9 +49,9 @@ const SkillsSection = () => {
     };
 
     // Initialize marquees
-    createMarquee(marquee1Ref, 50, 'left');
-    createMarquee(marquee2Ref, 50, 'left');
-    createMarquee(marquee3Ref, 50, 'left');
+    createMarquee(marquee1Ref, 15, 'left');
+    createMarquee(marquee2Ref, 20, 'left');
+    createMarquee(marquee3Ref, 20, 'left');
 
     // Section title animation
     gsap.fromTo(
