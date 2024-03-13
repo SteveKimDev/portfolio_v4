@@ -9,6 +9,7 @@ const AboutSectionImg = () => {
       <StaticImage
         src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1706635236/Portfolio%20website/steve01_transparent_background-v4_iixkzk.webp'
         alt='About section img'
+        placeholder='blurred'
         className={Homepage.aboutSectionImg}
       />
     </>

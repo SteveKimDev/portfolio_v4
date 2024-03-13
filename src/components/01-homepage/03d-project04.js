@@ -10,6 +10,7 @@ const Project04 = () => {
       <Link to='/'>
         <StaticImage
           src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707863337/ebl/ebl-cover-img_kf2ect.webp'
+          placeholder='blurred'
           alt='project cover img'
           className={Homepage.projectImg}
         />

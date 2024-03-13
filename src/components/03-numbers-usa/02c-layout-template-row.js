@@ -28,14 +28,31 @@ const LayoutTemplateRow = () => {
         },
       }
     );
+
+    gsap.fromTo(
+      [`#detail-img-trigger-3`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: 'power1.outIn',
+
+        scrollTrigger: {
+          trigger: `#detail-img-trigger-3`,
+          start: 'top 70%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
   }, []);
   return (
     <section>
-      <Row className={`m-top-100`}>
+      <Row className={`m-top-100`} id='detail-img-trigger-3'>
         <Col xl={8} lg={7} className={`${Projectpage.order2}`}>
           <div>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193483/NUSA/layout-template_v1chx2.webp'
+              placeholder='blurred'
               alt='layout template img'
               className={Projectpage.detailImg}
             />

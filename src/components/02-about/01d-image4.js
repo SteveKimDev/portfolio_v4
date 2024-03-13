@@ -8,6 +8,7 @@ const AboutIntroImg04 = () => {
     <div className={Aboutpage.aboutIntroImgDiv} data-speed='1.20'>
       <StaticImage
         src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1708030703/Portfolio%20website/01-transparent_mducih.webp'
+        placeholder='blurred'
         alt='About Intro img'
         className={Aboutpage.aboutIntroImg}
       />

@@ -79,6 +79,7 @@ const HeroSection = () => {
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833979/NUSA/4_vhhifv.webp'
               alt='project hero img'
+              placeholder='blurred'
               className={Projectpage.heroMobileImg}
             />
           </div>
@@ -87,6 +88,7 @@ const HeroSection = () => {
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833978/NUSA/2_c3bhvt.webp'
               alt='project hero img'
+              placeholder='blurred'
               className={Projectpage.heroMobileImg}
             />
           </div>
@@ -95,6 +97,7 @@ const HeroSection = () => {
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833981/NUSA/1_r44qjz.webp'
               alt='project hero img'
+              placeholder='blurred'
               className={Projectpage.heroMobileImg}
             />
           </div>
@@ -103,6 +106,7 @@ const HeroSection = () => {
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833978/NUSA/3_qjsnab.webp'
               alt='project hero img'
+              placeholder='blurred'
               className={Projectpage.heroMobileImg}
             />
           </div>

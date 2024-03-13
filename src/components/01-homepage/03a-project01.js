@@ -11,6 +11,7 @@ const Project01 = () => {
         <StaticImage
           src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709833959/NUSA/NUSA_cover_img_gt9mkf.webp'
           alt='project cover img'
+          placeholder='blurred'
           className={Homepage.projectImg}
         />
         <div className={Homepage.projectTitle}>

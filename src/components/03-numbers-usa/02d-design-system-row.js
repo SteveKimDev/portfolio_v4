@@ -28,6 +28,22 @@ const DesignSystemRow = () => {
         },
       }
     );
+
+    gsap.fromTo(
+      [`#detail-img-trigger-4`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: 'power1.outIn',
+
+        scrollTrigger: {
+          trigger: `#detail-img-trigger-4`,
+          start: 'top 70%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
   }, []);
   return (
     <section>
@@ -44,19 +60,21 @@ const DesignSystemRow = () => {
             </p>
           </div>
         </Col>
-        <Col lg={{ span: 4, offset: 1 }} md={6}>
+        <Col lg={{ span: 4, offset: 1 }} md={6} id='detail-img-trigger-4'>
           <div style={{ padding: '8px' }}>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193722/NUSA/design_system_-_color_ui8tei.webp'
+              placeholder='blurred'
               alt='design system img'
               className={Projectpage.detailImg}
             />
           </div>
         </Col>
-        <Col lg={4} md={6}>
+        <Col lg={4} md={6} id='detail-img-trigger-4'>
           <div style={{ padding: '8px' }}>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193723/NUSA/design_system_-_typograpghy_tivwpp.webp'
+              placeholder='blurred'
               alt='design system img'
               className={Projectpage.detailImg}
             />

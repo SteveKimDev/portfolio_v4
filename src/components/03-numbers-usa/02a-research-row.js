@@ -28,6 +28,22 @@ const ResearchRow = () => {
         },
       }
     );
+
+    gsap.fromTo(
+      [`#detail-img-trigger-1`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: 'power1.outIn',
+
+        scrollTrigger: {
+          trigger: `#detail-img-trigger-1`,
+          start: 'top 70%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
   }, []);
   return (
     <section>
@@ -46,10 +62,11 @@ const ResearchRow = () => {
             </p>
           </div>
         </Col>
-        <Col lg={{ span: 7, offset: 1 }}>
+        <Col lg={{ span: 7, offset: 1 }} id='detail-trigger-1'>
           <div>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709922952/NUSA/personas_jx77dl.webp'
+              placeholder='blurred'
               alt='persona img'
               className={Projectpage.detailImg}
             />

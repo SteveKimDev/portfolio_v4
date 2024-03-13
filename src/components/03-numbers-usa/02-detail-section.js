@@ -5,6 +5,7 @@ import InfoArchRow from './02b-info-arch-row';
 import LayoutTemplateRow from './02c-layout-template-row';
 import DesignSystemRow from './02d-design-system-row';
 import UIDesign from './02e-ui-design';
+import CaseStudyBtn from '../00-reusable-components/case-study-btn';
 
 const DetailsSection = () => {
   return (
@@ -24,16 +25,8 @@ const DetailsSection = () => {
       {/* row 5 */}
       <DesignSystemRow />
 
-      <div className='text-align-center m-top-100'>
-        <a
-          href='https://docs.google.com/presentation/d/1W6wREAbKEIhWbmRACw8QzHFqug-P_XRSix1djH5m4pw/edit?usp=sharing'
-          target='_blank'
-          rel='noreferrer'
-          className='dk-button'
-        >
-          <span>View Full Case Study</span>
-        </a>
-      </div>
+      {/* row 6 */}
+      <CaseStudyBtn url='https://docs.google.com/presentation/d/1W6wREAbKEIhWbmRACw8QzHFqug-P_XRSix1djH5m4pw/edit?usp=sharing' />
     </div>
   );
 };

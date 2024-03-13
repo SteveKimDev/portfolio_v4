@@ -10,6 +10,7 @@ const Project03 = () => {
       <Link to='/'>
         <StaticImage
           src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707862171/FSD%20Sign%20Up/FDS_cover_image_gioiqv.webp'
+          placeholder='blurred'
           alt='project cover img'
           className={Homepage.projectImg}
         />

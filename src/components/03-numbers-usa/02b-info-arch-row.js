@@ -28,6 +28,22 @@ const InfoArchRow = () => {
         },
       }
     );
+
+    gsap.fromTo(
+      [`#detail-img-trigger-2`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: 'power1.outIn',
+
+        scrollTrigger: {
+          trigger: `#detail-img-trigger-2`,
+          start: 'top 70%',
+          toggleActions: 'play none none none',
+        },
+      }
+    );
   }, []);
   return (
     <section>
@@ -48,10 +64,11 @@ const InfoArchRow = () => {
             </p>
           </div>
         </Col>
-        <Col xl={{ span: 10, offset: 1 }}>
+        <Col xl={{ span: 10, offset: 1 }} id='detail-img-trigger-2'>
           <div className={`m-top-25 tablet-m-top-0`}>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709855286/NUSA/sitemap_m8rnd0.webp'
+              placeholder='blurred'
               alt='sitemap img'
               className={Projectpage.detailImg}
             />
