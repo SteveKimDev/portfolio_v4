@@ -1,17 +1,17 @@
-.hero-copy-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 800px;
+.hero-img-row,
+.hero-img {
+  height: 60vh;
+}
+
+.hero-copy-row {
+  height: 250px;
 }
 
 .hero-title {
-  font-size: 6.5vw;
-  line-height: normal;
-}
-
-.hero-description {
-  margin-top: -25px;
+  font-size: 8rem;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-weight: 700;
 }
 
 .hero-subtitle {
@@ -19,50 +19,7 @@
 }
 
 .hero-subdescription {
-  margin-top: -10px;
-}
-
-.hero-col2 {
-  overflow: hidden;
-}
-
-.hero-mobile-img {
-  width: 12vw;
-  filter: drop-shadow(0px 8px 32px rgba(31, 38, 135, 0.9));
-}
-
-.hero-mobile-img1 {
-  position: absolute;
-  top: 250px;
-  right: 0;
-}
-
-.hero-mobile-img2 {
-  position: absolute;
-  top: 250px;
-  right: 10vw;
-}
-
-.hero-mobile-img3 {
-  position: absolute;
-  top: 250px;
-  right: 20vw;
-}
-
-.hero-mobile-img4 {
-  position: absolute;
-  top: 250px;
-  right: 30vw;
-}
-
-.hero-flat-img-1 {
-  position: absolute;
-  top: 250px;
-  left: 30px;
-}
-
-.hero-flat-img {
-  filter: drop-shadow(0px 8px 32px rgba(31, 38, 135, 0.9));
+  margin-top: -8px;
 }
 
 .detail-div-center-align {
@@ -110,83 +67,15 @@
 }
 
 @media (min-width: 1921px) {
-  .hero-title {
-    font-size: 8rem;
-    line-height: normal;
-  }
-
-  .hero-mobile-img {
-    width: 225px;
-  }
-
-  .hero-mobile-img1 {
-    position: absolute;
-    top: 175px;
-    right: 0;
-  }
-
-  .hero-mobile-img2 {
-    position: absolute;
-    top: 175px;
-    right: 200px;
-  }
-
-  .hero-mobile-img3 {
-    position: absolute;
-    top: 175px;
-    right: 400px;
-  }
-
-  .hero-mobile-img4 {
-    position: absolute;
-    top: 175px;
-    right: 600px;
-  }
-
-  .hero-flat-img-1 {
-    position: absolute;
-    top: 175px;
-    left: 30px;
-  }
 }
 
 @media (max-width: 1199px) {
-  .hero-copy-container {
-    display: block;
-    flex-direction: inherit;
-    justify-content: inherit;
-    height: auto;
-    margin-top: 100px;
+  .hero-copy-row {
+    height: 200px;
   }
-
-  .hero-mobile-img1 {
-    position: absolute;
-    top: 200px;
-    right: 0;
-  }
-
-  .hero-mobile-img2 {
-    position: absolute;
-    top: 200px;
-    right: 8vw;
-  }
-
-  .hero-mobile-img3 {
-    position: absolute;
-    top: 200px;
-    right: 16vw;
-  }
-
-  .hero-mobile-img4 {
-    position: absolute;
-    top: 200px;
-    right: 24vw;
-  }
-
-  .hero-flat-img-1 {
-    position: absolute;
-    top: 200px;
-    left: 30px;
+  .hero-title {
+    font-size: 6rem;
+    line-height: 75px;
   }
 
   .scroll-item video {
@@ -196,56 +85,17 @@
 }
 
 @media (max-width: 991px) {
-  .hero-col1 {
-    order: 2;
+  .hero-img-row,
+  .hero-img {
+    height: 50vh;
   }
 
-  .hero-copy-container {
-    margin-top: 0;
-  }
-
-  .hero-col2 {
-    order: 1;
-    height: 52.5vh;
-  }
-
-  .hero-mobile-img {
-    width: 25vw;
-  }
-
-  .hero-mobile-img1 {
-    position: absolute;
-    top: 100px;
-    right: 0;
-  }
-
-  .hero-mobile-img2 {
-    position: absolute;
-    top: 100px;
-    right: 16.5vw;
-  }
-
-  .hero-mobile-img3 {
-    position: absolute;
-    top: 100px;
-    right: 33vw;
-  }
-
-  .hero-mobile-img4 {
-    position: absolute;
-    top: 100px;
-    right: 49.5vw;
-  }
-
-  .hero-flat-img-1 {
-    position: absolute;
-    top: 100px;
-    left: 0;
+  .hero-copy-row {
+    height: 250px;
   }
 
   .hero-title {
     font-size: 5rem;
-    line-height: normal;
   }
 
   .detail-div-center-align {
@@ -280,71 +130,32 @@
 }
 
 @media (max-width: 767px) {
-  .hero-col2 {
-    height: 42vh;
+  .hero-img-row,
+  .hero-img {
+    height: 40vh;
   }
 
-  .hero-mobile-img {
-    width: 25vw;
-  }
-
-  .hero-mobile-img1 {
-    position: absolute;
-    top: 100px;
-    right: 0;
-  }
-
-  .hero-mobile-img2 {
-    position: absolute;
-    top: 100px;
-    right: 15.5vw;
-  }
-
-  .hero-mobile-img3 {
-    position: absolute;
-    top: 100px;
-    right: 31vw;
-  }
-
-  .hero-mobile-img4 {
-    position: absolute;
-    top: 100px;
-    right: 47vw;
+  .hero-copy-row {
+    height: 225px;
   }
 }
 
 @media (max-width: 600px) {
-  .hero-mobile-img {
-    width: 135px;
+  .hero-img-row {
+    margin-top: 120px;
   }
 
-  .hero-mobile-img1 {
-    position: absolute;
-    top: 100px;
-    right: 0;
+  .hero-img-row,
+  .hero-img {
+    height: 30vh;
   }
 
-  .hero-mobile-img2 {
-    position: absolute;
-    top: 100px;
-    right: 20vw;
-  }
-
-  .hero-mobile-img3 {
-    position: absolute;
-    top: 100px;
-    right: 40vw;
-  }
-
-  .hero-mobile-img4 {
-    position: absolute;
-    top: 100px;
-    right: 60vw;
+  .hero-copy-row {
+    height: 365px;
   }
 
   .hero-title {
     font-size: 3.75rem;
-    line-height: normal;
   }
 
   .scroll-item video {

@@ -51,7 +51,7 @@ const LayoutTemplateRow = () => {
         <Col xl={8} lg={7} className={`${Projectpage.order2}`}>
           <div>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193483/NUSA/layout-template_v1chx2.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710450405/NUSA/layout-template_ecnhwo.webp'
               placeholder='blurred'
               alt='layout template img'
               className={Projectpage.detailImg}

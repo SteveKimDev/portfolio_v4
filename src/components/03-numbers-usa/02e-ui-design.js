@@ -94,16 +94,14 @@ const UIDesign = () => {
           >
             <section className={` ${Projectpage.detailDiv}`}>
               <h2 className={`gradient-color text-align-center`}>
-                Website and Mobile App Products
+                Project Summary
               </h2>
               <p className={`text-align-center`}>
-                We utilized insights from our research and content strategy to
-                meet NUSA's business objectives. We carefully selected color
-                schemes, typography, and iconography that embodied the brand's
-                identity, while template layouts and a comprehensive design
-                system ensured consistent, visually engaging designs that
-                strengthened brand identity and user engagement across the
-                website and mobile app.
+                A non-profit political organization, recognized the need for a
+                significant website upgrade, encompassing a fresh redesign,
+                enhanced information architecture for page navigation and
+                content reorganization, as well a mobile app platform which
+                focused on participation in political initiatives.
               </p>
             </section>
           </Col>
@@ -114,7 +112,7 @@ const UIDesign = () => {
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
                 <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
-                    src='https://res.cloudinary.com/stevekim/video/upload/v1710193302/NUSA/video-4_vevtoy.mp4'
+                    src='https://res.cloudinary.com/stevekim/video/upload/v1710450926/NUSA/video-4_ujnvke.mp4'
                     type='video/mp4'
                   />
                 </video>
@@ -124,7 +122,7 @@ const UIDesign = () => {
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
                 <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
-                    src='https://res.cloudinary.com/stevekim/video/upload/v1710193289/NUSA/video-2_emqtwg.mp4'
+                    src='https://res.cloudinary.com/stevekim/video/upload/v1710450907/NUSA/video-2_dbodau.mp4'
                     type='video/mp4'
                   />
                 </video>
@@ -134,7 +132,7 @@ const UIDesign = () => {
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
                 <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
-                    src='https://res.cloudinary.com/stevekim/video/upload/v1710193278/NUSA/video-1_nj26s3.mp4'
+                    src='https://res.cloudinary.com/stevekim/video/upload/v1710450895/NUSA/video-1_a84ena.mp4'
                     type='video/mp4'
                   />
                 </video>
@@ -144,7 +142,7 @@ const UIDesign = () => {
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
                 <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
-                    src='https://res.cloudinary.com/stevekim/video/upload/v1710193294/NUSA/video-3_doh6fu.mp4'
+                    src='https://res.cloudinary.com/stevekim/video/upload/v1710450916/NUSA/video-3_xkqo1d.mp4'
                     type='video/mp4'
                   />
                 </video>

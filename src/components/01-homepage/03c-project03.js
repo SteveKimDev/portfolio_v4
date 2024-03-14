@@ -7,7 +7,7 @@ import * as Homepage from '../../styles/homepage.module.css';
 const Project03 = () => {
   return (
     <>
-      <Link to='/'>
+      <Link to='/first-string-digital'>
         <StaticImage
           src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707862171/FSD%20Sign%20Up/FDS_cover_image_gioiqv.webp'
           placeholder='blurred'

@@ -71,11 +71,11 @@ const ContentMigrationRow = () => {
               Content Migration Planning and UAT Process
             </h2>
             <p>
-              Took the lead and planned the process for manually migrating
-              content that could not be automated. Offered guidance on necessary
-              modifications or additions to Contentful's content models. Made
-              significant contributions to the UAT process to validate all page
-              content and layouts.
+              Planned the process for manually migrating content that could not
+              be automated. Offered guidance on necessary modifications or
+              additions to Contentful's content models. Made significant
+              contributions to the UAT process to validate all page content and
+              layouts.
             </p>
           </div>
         </Col>

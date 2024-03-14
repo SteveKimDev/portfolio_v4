@@ -94,17 +94,15 @@ const UIDesign = () => {
           >
             <section className={` ${Projectpage.detailDiv}`}>
               <h2 className={`gradient-color text-align-center`}>
-                Leading The Information Architecture Efforts
+                Project Summary
               </h2>
               <p className={`text-align-center`}>
-                As the Information Architect on the ICBC project, my role
-                involved conducting a thorough website content audit, designing
-                the sitemap and navigation, identifying essential page templates
-                and components, and engaging in Contentful content modeling and
-                migration processes. Additionally, I provided Contentful
-                training, implemented User Acceptance Testing (UAT) processes,
-                and collaborated closely with the development team to ensure a
-                cohesive and user-friendly digital experience.
+                A prominent auto insurance company serving the entire Vancouver
+                BC region,put into action an extensive content migration and
+                website replatforing project. The project's objective was to
+                transition from an outdated Sharepoint website and content //
+                management system to a modern, scalable web platform built using
+                NextJS and Contentful for their CMS.
               </p>
             </section>
           </Col>

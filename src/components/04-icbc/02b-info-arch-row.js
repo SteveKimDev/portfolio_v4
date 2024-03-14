@@ -55,7 +55,7 @@ const InfoArchRow = () => {
         >
           <div className={` ${Projectpage.detailDiv}`}>
             <h2 className={`gradient-color text-align-center`}>
-              Defining the Information Architecture
+              Information Architecture
             </h2>
             <p className={`text-align-center`}>
               Created a detailed sitemap, defined page templates, tracked

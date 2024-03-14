@@ -225,6 +225,14 @@ section {
   margin-bottom: 50px;
 }
 
+.m-top-75 {
+  margin-top: 75px;
+}
+
+.m-bottom-75 {
+  margin-bottom: 75px;
+}
+
 .m-top-100 {
   margin-top: 100px;
 }
