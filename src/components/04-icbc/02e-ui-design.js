@@ -113,7 +113,7 @@ const UIDesign = () => {
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
                 <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
-                    src='https://res.cloudinary.com/stevekim/video/upload/v1710356912/ICBC/video-1_hyawue.mp4'
+                    src='https://res.cloudinary.com/stevekim/video/upload/v1710457267/ICBC/video-1_zyedjc.mp4'
                     type='video/mp4'
                   />
                 </video>
@@ -123,7 +123,7 @@ const UIDesign = () => {
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
                 <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
-                    src='https://res.cloudinary.com/stevekim/video/upload/v1710356923/ICBC/video-2_rjkaf7.mp4'
+                    src='https://res.cloudinary.com/stevekim/video/upload/v1710457288/ICBC/video-2_vfzjs0.mp4'
                     type='video/mp4'
                   />
                 </video>
@@ -133,7 +133,7 @@ const UIDesign = () => {
               <div className={`scroll-item ${Projectpage.scrollItem}`}>
                 <video autoPlay muted playsInline ref={addVideoRef}>
                   <source
-                    src='https://res.cloudinary.com/stevekim/video/upload/v1710356928/ICBC/video-3_h4dsyv.mp4'
+                    src='https://res.cloudinary.com/stevekim/video/upload/v1710457457/ICBC/video-3_gouoys.mp4'
                     type='video/mp4'
                   />
                 </video>

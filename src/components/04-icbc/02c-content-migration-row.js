@@ -51,7 +51,7 @@ const ContentMigrationRow = () => {
         <Col xl={8} lg={7} className={`${Projectpage.order2}`}>
           <div>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710360506/ICBC/content-model_pryni8.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710457277/ICBC/content-model_n5ei8j.webp'
               placeholder='blurred'
               alt='layout template img'
               className={Projectpage.detailImg}

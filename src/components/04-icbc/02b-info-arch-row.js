@@ -68,7 +68,7 @@ const InfoArchRow = () => {
         <Col xl={{ span: 10, offset: 1 }} id='detail-img-trigger-2'>
           <div className={`m-top-25 tablet-m-top-0`}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710360210/ICBC/sitemap_xqrpfi.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710457272/ICBC/sitemap_byrqwy.webp'
               placeholder='blurred'
               alt='sitemap img'
               className={Projectpage.detailImg}

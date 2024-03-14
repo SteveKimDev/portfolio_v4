@@ -65,7 +65,7 @@ const WebsiteAuditRow = () => {
         <Col lg={{ span: 7, offset: 1 }} id='detail-trigger-1'>
           <div>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710359705/ICBC/web-audit_yii7rc.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710457243/ICBC/content-audit_dolvg1.webp'
               placeholder='blurred'
               alt='persona img'
               className={Projectpage.detailImg}

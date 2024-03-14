@@ -9,7 +9,7 @@ const Project02 = () => {
     <>
       <Link to='/icbc'>
         <StaticImage
-          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707861375/ICBC/ICBC-cover-image_bdr73p.webp'
+          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710457235/ICBC/ICBC-cover-image_jguntb.webp'
           placeholder='blurred'
           alt='project cover img'
           className={Homepage.projectImg}
