@@ -7,7 +7,7 @@ import * as Projectpage from '../../styles/project.module.css';
 
 const HeroSection = () => {
   useEffect(() => {
-    // Fade-in Animation
+    // Fade-in-Up Animation
     gsap.from([`.${Projectpage.heroImg}`], {
       height: 0,
       opacity: 0,
@@ -17,7 +17,7 @@ const HeroSection = () => {
 
     // Fade-in-Up Animation
     gsap.from([`.${Projectpage.heroTitle}`, `.sub-section`], {
-      y: 16,
+      y: 36,
       height: 0,
       opacity: 0,
       stagger: 0.3,
@@ -27,29 +27,31 @@ const HeroSection = () => {
     });
   }, []);
   return (
-    <section className={`m-top-75`}>
-      <Row>
+    <>
+      <Row className={`${Projectpage.heroImgRow}`}>
         {/* hero img */}
         <Col xs={12}>
           <StaticImage
-            src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710435876/FSD%20Sign%20Up/hero-img_oofu2r.webp'
+            src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710457886/FSD/hero-img_yh6tyi.webp'
             alt='project hero img'
             placeholder='blurred'
             className={Projectpage.heroImg}
           />
         </Col>
+      </Row>
 
+      <Row className={`${Projectpage.heroCopyRow}`}>
         {/* hero title */}
-        <Col xs={12} className={`m-top-25`}>
+        <Col xs={12} className={`m-top-25 m-bottom-25`}>
           <h1
             className={`gradient-color text-align-center ${Projectpage.heroTitle}`}
           >
-            First String Digtial
+            First String Digital
           </h1>
         </Col>
 
         {/* hero subtitle and sub-description 1 */}
-        <Col sm={{ span: 2, offset: 1 }} className={`sub-section`}>
+        <Col sm={4} className={`text-align-center sub-section `}>
           <div>
             <h2 className={`gradient-color ${Projectpage.heroSubtitle}`}>
               Role
@@ -61,17 +63,17 @@ const HeroSection = () => {
         </Col>
 
         {/* hero subtitle and sub-description 2 */}
-        <Col sm={{ span: 3, offset: 2 }} className={`sub-section`}>
+        <Col sm={4} className={`text-align-center sub-section`}>
           <div>
             <h2 className={`gradient-color ${Projectpage.heroSubtitle}`}>
               Product Type
             </h2>
-            <p className={`${Projectpage.heroSubdescription}`}>Saas Website</p>
+            <p className={`${Projectpage.heroSubdescription}`}>SaaS Website</p>
           </div>
         </Col>
 
         {/* hero subtitle and sub-description 3 */}
-        <Col sm={{ span: 2, offset: 2 }} className={`sub-section`}>
+        <Col sm={4} className={`text-align-center sub-section`}>
           <div>
             <h2 className={`gradient-color ${Projectpage.heroSubtitle}`}>
               Timeline
@@ -80,7 +82,7 @@ const HeroSection = () => {
           </div>
         </Col>
       </Row>
-    </section>
+    </>
   );
 };
 

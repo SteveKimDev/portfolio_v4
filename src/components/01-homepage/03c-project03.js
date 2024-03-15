@@ -9,7 +9,7 @@ const Project03 = () => {
     <>
       <Link to='/first-string-digital'>
         <StaticImage
-          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707862171/FSD%20Sign%20Up/FDS_cover_image_gioiqv.webp'
+          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710457880/FSD/cover-image_jwrt3s.webp'
           placeholder='blurred'
           alt='project cover img'
           className={Homepage.projectImg}
