@@ -11,7 +11,7 @@ const HeroSection = () => {
       y: 50,
       height: 0,
       opacity: 0,
-      stagger: 0.3,
+      stagger: 0.2,
       duration: 1,
       ease: 'power1.outIn',
     });

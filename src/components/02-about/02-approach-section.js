@@ -25,7 +25,7 @@ const ApproachSection = () => {
         scrollTrigger: {
           trigger: `#approach-section-title-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none none',
         },
       }
     );
@@ -36,15 +36,15 @@ const ApproachSection = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 2,
         delay: 1.5,
         ease: 'power1.outIn',
-        stagger: 0.5,
+        stagger: 0.2,
 
         scrollTrigger: {
           trigger: `#approach-card-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none none',
         },
       }
     );

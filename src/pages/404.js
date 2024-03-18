@@ -1,49 +1,22 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from 'react';
+import DKButton from '../components/00-reusable-components/dk-button';
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage = () => {
+const PageNotFound = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <section style={{ height: '100vh' }}>
+      <div className='vertical-horizontal-align-content'>
+        <div>
+          <h1 className='section-title gradient-color text-align-center'>
+            Page Not Found
+          </h1>
+          <h1 className='text-align-center'>It's time to go home now.</h1>
+          <div className='text-align-center m-top-50'>
+            <DKButton to='/' text='Go Home' />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default NotFoundPage
-
-export const Head = () => <title>Not found</title>
+export default PageNotFound;

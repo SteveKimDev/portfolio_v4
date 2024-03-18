@@ -25,7 +25,7 @@ const AboutIntroSection = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 2,
         ease: 'power1.inOut',
       }
     );
@@ -39,10 +39,9 @@ const AboutIntroSection = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 2,
         ease: 'power1.inOut',
-        delay: 0.5,
-        stagger: 0.5,
+        stagger: 0.2,
       }
     );
 

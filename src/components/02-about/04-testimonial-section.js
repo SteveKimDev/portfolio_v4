@@ -67,7 +67,7 @@ const TestimonialsSection = () => {
         scrollTrigger: {
           trigger: `#testimonials-section-title-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none none',
         },
       }
     );
@@ -84,7 +84,7 @@ const TestimonialsSection = () => {
         scrollTrigger: {
           trigger: `.${Aboutpage.carouselWrapper}`,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none none',
         },
       }
     );

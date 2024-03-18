@@ -7,7 +7,7 @@ import Project01 from './03a-project01';
 import Project02 from './03b-project02';
 import Project03 from './03c-project03';
 import Project04 from './03d-project04';
-import Project05 from './03e-project05';
+// import Project05 from './03e-project05';
 
 import * as Homepage from '../../styles/homepage.module.css';
 

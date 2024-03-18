@@ -169,6 +169,13 @@ h6 {
   margin-right: auto;
 }
 
+.vertical-horizontal-align-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height or adjust as needed */
+}
+
 a {
   text-decoration: none;
 }

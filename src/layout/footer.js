@@ -22,7 +22,7 @@ const Footer = () => {
         scrollTrigger: {
           trigger: '#footer-trigger',
           start: 'top 60%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none none',
         },
       }
     );
