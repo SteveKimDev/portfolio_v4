@@ -94,9 +94,9 @@ const ProjectSection = () => {
       <div className={`${Homepage.projectDiv}`}>
         <Project04 />
       </div>
-      <div className={`${Homepage.projectDiv}`}>
+      {/* <div className={`${Homepage.projectDiv}`}>
         <Project05 />
-      </div>
+      </div> */}
     </section>
   );
 };
