@@ -7,9 +7,9 @@ import * as Homepage from '../../styles/homepage.module.css';
 const Project04 = () => {
   return (
     <>
-      <Link to='/'>
+      <Link to='/english-book-ladder'>
         <StaticImage
-          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1707863337/ebl/ebl-cover-img_kf2ect.webp'
+          src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710788429/English%20Book%20Ladder/cover-img_fnsyqx.webp'
           placeholder='blurred'
           alt='project cover img'
           className={Homepage.projectImg}

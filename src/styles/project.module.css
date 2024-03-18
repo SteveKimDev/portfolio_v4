@@ -31,15 +31,20 @@
 
 .detail-div h2 {
   font-weight: 300;
+  font-size: 3rem;
 }
 
 .detail-div p,
 .detail-div ul {
-  margin-top: -10px;
+  margin-top: -4px;
 }
 
 .detail-img {
   border-radius: 15px;
+}
+
+.card-div {
+  margin: 24px 16px 0;
 }
 
 .horizontal-scroll-container {
@@ -76,6 +81,10 @@
   .hero-title {
     font-size: 6rem;
     line-height: 75px;
+  }
+
+  .detail-div h2 {
+    font-size: 2.5rem;
   }
 
   .scroll-item video {
@@ -123,6 +132,11 @@
   .order2 {
     order: 2;
   }
+
+  .card-div {
+    margin: 0 0 16px;
+  }
+
   .scroll-item video {
     width: 650px;
     height: 365.63px !important;
