@@ -95,6 +95,10 @@ a {
   .section-title {
     font-size: 5rem;
   }
+
+  .tablet-display-none {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {

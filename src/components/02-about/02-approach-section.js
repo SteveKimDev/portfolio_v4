@@ -64,7 +64,7 @@ const ApproachSection = () => {
         </Col>
       </Row>
       <Row id='approach-card-trigger'>
-        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
+        <Col xl={3} md={6} className={Aboutpage.cardCol}>
           <div className={`card ${Aboutpage.approachCard}`}>
             <h2>UX Research</h2>
             <p>
@@ -76,7 +76,7 @@ const ApproachSection = () => {
             </p>
           </div>
         </Col>
-        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
+        <Col xl={3} md={6} className={Aboutpage.cardCol}>
           <div
             className={`card ${Aboutpage.approachCard}  ${Aboutpage.approachCard02}`}
           >
@@ -90,7 +90,7 @@ const ApproachSection = () => {
             </p>
           </div>
         </Col>
-        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
+        <Col xl={3} md={6} className={Aboutpage.cardCol}>
           <div
             className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard03}`}
           >
@@ -104,7 +104,7 @@ const ApproachSection = () => {
             </p>
           </div>
         </Col>
-        <Col xl={3} lg={6} md={12} className={Aboutpage.cardCol}>
+        <Col xl={3} md={6} className={Aboutpage.cardCol}>
           <div
             className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard04}`}
           >

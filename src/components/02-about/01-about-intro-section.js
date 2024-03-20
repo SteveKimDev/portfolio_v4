@@ -74,16 +74,16 @@ const AboutIntroSection = () => {
         </Col>
       </Row>
       <Row>
-        <Col sm={3} xs={12}>
+        <Col lg={3} sm={4} xs={12}>
           <AboutIntroImg01 />
         </Col>
-        <Col sm={3} className='mobile-display-none'>
+        <Col lg={3} sm={4} className='mobile-display-none'>
           <AboutIntroImg02 />
         </Col>
-        <Col sm={3} className='mobile-display-none'>
+        <Col lg={3} sm={4} className='mobile-display-none'>
           <AboutIntroImg03 />
         </Col>
-        <Col sm={3} className='mobile-display-none'>
+        <Col lg={3} sm={4} className='tablet-display-none'>
           <AboutIntroImg04 />
         </Col>
       </Row>

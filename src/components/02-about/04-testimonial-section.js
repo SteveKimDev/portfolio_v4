@@ -108,7 +108,10 @@ const TestimonialsSection = () => {
       </div>
 
       {/* carousel */}
-      <div ref={carouselRef} className={Aboutpage.carouselWrapper}>
+      <div
+        ref={carouselRef}
+        className={`m-top-50 ${Aboutpage.carouselWrapper}`}
+      >
         {/* testimonial 1 */}
         <div className={`${Aboutpage.carouselDiv}`}>
           <Testimonial01 />

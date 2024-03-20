@@ -25,7 +25,7 @@ const SocialLinks = () => {
         </div>
         <div>
           <a
-            href='https://www.linkedin.com/in/stevekim-io'
+            href='https://dribbble.com/stevekim-io'
             target='_blank'
             rel='noreferrer'
           >

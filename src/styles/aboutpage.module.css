@@ -92,7 +92,7 @@
   .about-intro-img {
     width: 80%;
     margin: auto;
-    display: block;
+    display: block !important;
   }
 }
 
@@ -115,10 +115,6 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .approach-section {
-    padding-bottom: 50px;
-  }
-
   .approach-card03,
   .approach-card04 {
     margin-top: 32px !important;
@@ -126,22 +122,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .approach-section {
-    padding-bottom: 50px;
-  }
-
-  .approach-card02,
-  .approach-card03,
-  .approach-card04 {
-    margin-top: 32px !important;
-  }
 }
 
 @media (min-width: 601px) and (max-width: 767px) {
-  .approach-section {
-    padding-bottom: 50px;
-  }
-
   .approach-card02,
   .approach-card03,
   .approach-card04 {
@@ -150,10 +133,6 @@
 }
 
 @media (max-width: 600px) {
-  .approach-section {
-    padding-bottom: 50px;
-  }
-
   .approach-card02,
   .approach-card03,
   .approach-card04 {
