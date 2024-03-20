@@ -10,7 +10,7 @@
 .hero-title {
   font-size: 8rem;
   text-transform: uppercase;
-  line-height: 0.9;
+  line-height: 1.2cap;
   font-weight: 700;
 }
 
@@ -59,7 +59,7 @@
 
 .scroll-item {
   flex: 0 0 auto;
-  padding: 0 24px;
+  padding: 0 16px;
 }
 
 .scroll-item video {
@@ -80,7 +80,6 @@
   }
   .hero-title {
     font-size: 6rem;
-    line-height: 75px;
   }
 
   .detail-div h2 {

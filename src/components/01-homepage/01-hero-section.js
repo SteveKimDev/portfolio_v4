@@ -10,14 +10,43 @@ const HeroSection = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     // Fade-in-Up Animation
-    gsap.from(`.${Homepage.headlineDiv} > *`, {
-      y: 50,
-      height: 0,
-      opacity: 0,
-      stagger: 0.2,
-      duration: 1,
-      ease: 'power1.outIn',
-    });
+    // gsap.from(`.${Homepage.headlineDiv} > *`, {
+    //   y: 50,
+    //   height: 0,
+    //   opacity: 0,
+    //   stagger: 0.2,
+    //   duration: 1,
+    //   ease: 'power1.outIn',
+    //   scrollTrigger: {
+    //     trigger: `.${Homepage.headlineDiv}`,
+    //     start: 'bottom center',
+    //     toggleActions: 'play none reverse reverse',
+    //   },
+    // });
+
+    gsap.fromTo(
+      `.${Homepage.headlineDiv} > *`,
+      {
+        // Starting values
+        y: 50,
+        height: 0,
+        opacity: 0,
+      },
+      {
+        // Ending values (assuming you want to animate to their natural state)
+        y: 0, // End at its natural position
+        height: 'auto', // End at its natural height. Use a specific value if needed.
+        opacity: 1, // Fully visible
+        stagger: 0.2,
+        duration: 1,
+        ease: 'power1.outIn',
+        scrollTrigger: {
+          trigger: `.${Homepage.headlineDiv}`,
+          start: 'top center',
+          toggleActions: 'play none restart none',
+        },
+      }
+    );
 
     // fade-out on scroll animation
     gsap.to(`.${Homepage.heroSection} > *`, {

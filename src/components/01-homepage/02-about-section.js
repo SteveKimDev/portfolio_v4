@@ -15,15 +15,16 @@ const AboutSection = () => {
   // section fade in and out on scroll
   useEffect(() => {
     gsap.fromTo(
-      [`.${Homepage.aboutSection}`],
+      [`.${Homepage.aboutSection}`, `.${Homepage.aboutSectionImgDiv}`],
       { opacity: 0 },
       {
         opacity: 1,
+        duraction: 1,
         ease: 'power1.outIn',
         scrollTrigger: {
           trigger: `.${Homepage.aboutSection}`,
-          start: 'top center',
-          end: 'bottom 80%',
+          start: 'top 70%',
+          end: 'bottom 30%',
           toggleActions: 'play reverse play reverse',
         },
       }
@@ -58,11 +59,11 @@ const AboutSection = () => {
     const imgDiv1 = document.querySelector(`.${Homepage.aboutSectionImgDiv1}`);
 
     gsap.to(imgDiv1, {
-      scale: 0.9, // Adjust this value as needed (0.5 = 50% of the original size)
+      scale: 0.9,
       ease: 'none',
       scrollTrigger: {
         trigger: imgDiv1,
-        start: 'top bottom', // Adjust these values based on your layout
+        start: 'top bottom',
         end: 'bottom top',
         scrub: true,
         toggleActions: 'play reverse play reverse',
@@ -73,11 +74,11 @@ const AboutSection = () => {
     const imgDiv2 = document.querySelector(`.${Homepage.aboutSectionImgDiv2}`);
 
     gsap.to(imgDiv2, {
-      scale: 0.8, // Adjust this value as needed (0.5 = 50% of the original size)
+      scale: 0.8,
       ease: 'none',
       scrollTrigger: {
         trigger: imgDiv2,
-        start: 'top bottom', // Adjust these values based on your layout
+        start: 'top bottom',
         end: 'bottom top',
         scrub: true,
         toggleActions: 'play reverse play reverse',
@@ -88,11 +89,11 @@ const AboutSection = () => {
     const imgDiv3 = document.querySelector(`.${Homepage.aboutSectionImgDiv3}`);
 
     gsap.to(imgDiv3, {
-      scale: 0.7, // Adjust this value as needed (0.5 = 50% of the original size)
+      scale: 0.7,
       ease: 'none',
       scrollTrigger: {
         trigger: imgDiv3,
-        start: 'top bottom', // Adjust these values based on your layout
+        start: 'top bottom',
         end: 'bottom top',
         scrub: true,
         toggleActions: 'play reverse play reverse',
@@ -103,11 +104,11 @@ const AboutSection = () => {
     const imgDiv4 = document.querySelector(`.${Homepage.aboutSectionImgDiv4}`);
 
     gsap.to(imgDiv4, {
-      scale: 0.6, // Adjust this value as needed (0.5 = 50% of the original size)
+      scale: 0.6,
       ease: 'none',
       scrollTrigger: {
         trigger: imgDiv4,
-        start: 'top bottom', // Adjust these values based on your layout
+        start: 'top bottom',
         end: 'bottom top',
         scrub: true,
         toggleActions: 'play reverse play reverse',

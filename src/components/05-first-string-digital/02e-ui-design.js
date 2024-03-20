@@ -35,7 +35,7 @@ const UIDesign = () => {
       x: () =>
         -(
           document.querySelector('.scroll-wrap').scrollWidth -
-          document.documentElement.clientWidth
+          document.querySelector('.horizontal-scroll-container').clientWidth
         ) + 'px',
       ease: 'none',
       scrollTrigger: {

@@ -53,12 +53,14 @@ const ApproachSection = () => {
     <section className={Aboutpage.approachSection}>
       <Row id='approach-section-title-trigger'>
         <Col>
-          <h1
-            id='approach-section-title'
-            className='section-title gradient-color text-align-center'
-          >
-            Approach
-          </h1>
+          <div className='section-title-div'>
+            <h1
+              id='approach-section-title'
+              className='section-title gradient-color text-align-center'
+            >
+              Approach
+            </h1>
+          </div>
         </Col>
       </Row>
       <Row id='approach-card-trigger'>

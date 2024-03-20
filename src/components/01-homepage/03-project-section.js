@@ -18,9 +18,9 @@ const ProjectSection = () => {
     // section title animation
     gsap.fromTo(
       [`#project-section-title`],
-      { y: '200px', opacity: 0, height: 0 },
+      { y: 36, opacity: 0, height: 0 },
       {
-        y: '0px',
+        y: 0,
         opacity: 1,
         height: 'auto',
         duration: 1,
@@ -39,7 +39,7 @@ const ProjectSection = () => {
       x: () =>
         -(
           document.querySelector('.scroll-wrap').scrollWidth -
-          document.documentElement.clientWidth
+          document.querySelector('.horizontal-scroll-container').clientWidth
         ) + 'px',
       ease: 'none',
       scrollTrigger: {
@@ -54,7 +54,7 @@ const ProjectSection = () => {
   return (
     <div
       id='project-section'
-      className={`horizontal-scroll-container ${Homepage.projectSection}`}
+      className={`m-top-100 horizontal-scroll-container ${Homepage.projectSection}`}
     >
       <div id='selected-projects-title-trigger' className='section-title-div'>
         <h1
@@ -64,7 +64,7 @@ const ProjectSection = () => {
           Selected Projects
         </h1>
       </div>
-      <div className={`scroll-wrap ${Homepage.scrollWrap}`}>
+      <div className={`scroll-wrap m-top-75 ${Homepage.scrollWrap}`}>
         {/* item 1 */}
         <div className={`scroll-item ${Homepage.scrollItem}`}>
           <Project01 />

@@ -97,7 +97,7 @@ const TestimonialsSection = () => {
     <div>
       <div
         id='testimonials-section-title-trigger'
-        className={Aboutpage.sectionTitleDiv}
+        className={`section-title-div ${Aboutpage.sectionTitleDiv}`}
       >
         <h1
           id='testimonials-section-title'
