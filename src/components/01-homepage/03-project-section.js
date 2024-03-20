@@ -7,7 +7,7 @@ import Project01 from './03a-project01';
 import Project02 from './03b-project02';
 import Project03 from './03c-project03';
 import Project04 from './03d-project04';
-// import Project05 from './03e-project05';
+// // import Project05 from './03e-project05';
 
 import * as Homepage from '../../styles/homepage.module.css';
 
@@ -18,7 +18,7 @@ const ProjectSection = () => {
     // section title animation
     gsap.fromTo(
       [`#project-section-title`],
-      { y: '36px', opacity: 0, height: 0 },
+      { y: '200px', opacity: 0, height: 0 },
       {
         y: '0px',
         opacity: 1,
@@ -29,52 +29,34 @@ const ProjectSection = () => {
         scrollTrigger: {
           trigger: '#selected-projects-title-trigger',
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none reverse',
         },
       }
     );
 
-    // projects scroll animation
-    const sections = gsap.utils.toArray(`.${Homepage.projectDiv}`);
-
-    sections.forEach((section) => {
-      const text = section.querySelector(`.${Homepage.projectTitle}`);
-      const image = section.querySelector(`.${Homepage.projectImg}`);
-
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: section,
-          scrub: 1,
-          start: 'top 90%',
-          end: 'bottom 30%',
-        },
-      });
-
-      tl.from(image, {
-        scale: 0.5,
-        rotate: 8,
-        opacity: 0,
-        ease: 'power1.inOut',
-        duration: 1,
-      })
-        .from(text, {
-          scale: 0,
-          opacity: 0,
-          y: 100,
-          duration: 1,
-        })
-        .to(text, { scale: 1, opacity: 0, y: -100, ease: 'power1.inOut' })
-        .to(image, {
-          scale: 0.5,
-          rotate: -8,
-          opacity: 0,
-          ease: 'power1.inOut',
-        });
+    // horizontal scroll animation
+    gsap.to('.scroll-wrap', {
+      x: () =>
+        -(
+          document.querySelector('.scroll-wrap').scrollWidth -
+          document.documentElement.clientWidth
+        ) + 'px',
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.horizontal-scroll-container',
+        pin: true,
+        scrub: 1,
+        start: 'center center',
+        end: 'bottom top',
+      },
     });
   }, []);
   return (
-    <section id='project-section' className={Homepage.projectSection}>
-      <div id='selected-projects-title-trigger'>
+    <div
+      id='project-section'
+      className={`horizontal-scroll-container ${Homepage.projectSection}`}
+    >
+      <div id='selected-projects-title-trigger' className='section-title-div'>
         <h1
           id='project-section-title'
           className='gradient-color section-title text-align-center'
@@ -82,22 +64,33 @@ const ProjectSection = () => {
           Selected Projects
         </h1>
       </div>
-      <div className={`${Homepage.projectDiv}`}>
-        <Project01 />
+      <div className={`scroll-wrap ${Homepage.scrollWrap}`}>
+        {/* item 1 */}
+        <div className={`scroll-item ${Homepage.scrollItem}`}>
+          <Project01 />
+        </div>
+
+        {/* item 2 */}
+        <div className={`scroll-item ${Homepage.scrollItem}`}>
+          <Project02 />
+        </div>
+
+        {/* item 3 */}
+        <div className={`scroll-item ${Homepage.scrollItem}`}>
+          <Project03 />
+        </div>
+
+        {/* item 4 */}
+        <div className={`scroll-item ${Homepage.scrollItem}`}>
+          <Project04 />
+        </div>
+
+        {/* item 5 */}
+        {/* <div className={`${Homepage.scrollItem`} >
+       <Project05 />
+       </div> */}
       </div>
-      <div className={`${Homepage.projectDiv}`}>
-        <Project02 />
-      </div>
-      <div className={`${Homepage.projectDiv}`}>
-        <Project03 />
-      </div>
-      <div className={`${Homepage.projectDiv}`}>
-        <Project04 />
-      </div>
-      {/* <div className={`${Homepage.projectDiv}`}>
-        <Project05 />
-      </div> */}
-    </section>
+    </div>
   );
 };
 

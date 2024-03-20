@@ -12,7 +12,24 @@ import * as Homepage from '../../styles/homepage.module.css';
 const AboutSection = () => {
   gsap.registerPlugin(ScrollTrigger);
 
+  // section fade in and out on scroll
   useEffect(() => {
+    gsap.fromTo(
+      [`.${Homepage.aboutSection}`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        ease: 'power1.outIn',
+        scrollTrigger: {
+          trigger: `.${Homepage.aboutSection}`,
+          start: 'top center',
+          end: 'bottom 80%',
+          toggleActions: 'play reverse play reverse',
+        },
+      }
+    );
+
+    // content fade-in-up on scroll
     gsap.fromTo(
       [
         `.${Homepage.aboutIntro}`,

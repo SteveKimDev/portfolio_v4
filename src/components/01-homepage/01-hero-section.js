@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import DkButton from '../00-reusable-components/dk-button';
 import * as Homepage from '../../styles/homepage.module.css';
 
 const HeroSection = () => {
   useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     // Fade-in-Up Animation
     gsap.from(`.${Homepage.headlineDiv} > *`, {
       y: 50,
@@ -14,6 +17,18 @@ const HeroSection = () => {
       stagger: 0.2,
       duration: 1,
       ease: 'power1.outIn',
+    });
+
+    // fade-out on scroll animation
+    gsap.to(`.${Homepage.heroSection} > *`, {
+      opacity: 0,
+      duration: 1,
+      ease: 'power1.outIn',
+      scrollTrigger: {
+        trigger: `.${Homepage.heroSection}`,
+        start: 'bottom center',
+        toggleActions: 'play none none reverse',
+      },
     });
   }, []);
   return (
@@ -29,7 +44,7 @@ const HeroSection = () => {
           applications, utilizing both creative and technical problem-solving
           skills.
         </p>
-        <div className={`m-top-50 cta-btn`}>
+        <div className={`m-top-75 cta-btn`}>
           <DkButton text='Check Out My Work' to='/#project-section' />
         </div>
       </div>
