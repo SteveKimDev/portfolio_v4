@@ -94,7 +94,7 @@ const TestimonialsSection = () => {
     // };
   }, []);
   return (
-    <div>
+    <div className='m-top-100'>
       <div
         id='testimonials-section-title-trigger'
         className={`section-title-div ${Aboutpage.sectionTitleDiv}`}
@@ -110,7 +110,7 @@ const TestimonialsSection = () => {
       {/* carousel */}
       <div
         ref={carouselRef}
-        className={`m-top-50 ${Aboutpage.carouselWrapper}`}
+        className={`m-top-25 ${Aboutpage.carouselWrapper}`}
       >
         {/* testimonial 1 */}
         <div className={`${Aboutpage.carouselDiv}`}>

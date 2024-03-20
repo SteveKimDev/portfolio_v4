@@ -128,7 +128,6 @@
 
 .about-intro {
   font-size: 10.5vw;
-  font-weight: 600;
   line-height: 1.3cap;
 }
 
@@ -313,7 +312,7 @@
 .scroll-item .project-title h2 {
   color: #ffffff;
   font-size: 4rem;
-  line-height: 1cap;
+  line-height: 1.5cap;
 }
 
 .scroll-item .project-title p {

@@ -34,6 +34,24 @@ const ProjectSection = () => {
       }
     );
 
+    // section title animation
+    gsap.fromTo(
+      [`.scroll-item`],
+      { opacity: 0 },
+      {
+        opacity: 1,
+        delay: 1,
+        duration: 1,
+        ease: 'none',
+
+        scrollTrigger: {
+          trigger: '.scroll-wrap',
+          start: 'top 80%',
+          toggleActions: 'play none none reverse',
+        },
+      }
+    );
+
     // horizontal scroll animation
     gsap.to('.scroll-wrap', {
       x: () =>
@@ -54,7 +72,7 @@ const ProjectSection = () => {
   return (
     <div
       id='project-section'
-      className={`m-top-100 horizontal-scroll-container ${Homepage.projectSection}`}
+      className={`m-top-200 horizontal-scroll-container ${Homepage.projectSection}`}
     >
       <div
         id='selected-projects-title-trigger'
@@ -67,7 +85,7 @@ const ProjectSection = () => {
           Selected Projects
         </h1>
       </div>
-      <div className={`scroll-wrap m-top-75 ${Homepage.scrollWrap}`}>
+      <div className={`scroll-wrap m-top-50 ${Homepage.scrollWrap}`}>
         {/* item 1 */}
         <div className={`scroll-item ${Homepage.scrollItem}`}>
           <Project01 />

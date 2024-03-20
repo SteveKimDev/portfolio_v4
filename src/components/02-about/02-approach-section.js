@@ -50,7 +50,7 @@ const ApproachSection = () => {
     );
   }, []);
   return (
-    <section className={Aboutpage.approachSection}>
+    <section className={`m-top-100 ${Aboutpage.approachSection}`}>
       <Row id='approach-section-title-trigger'>
         <Col>
           <div className='section-title-div'>
@@ -63,9 +63,11 @@ const ApproachSection = () => {
           </div>
         </Col>
       </Row>
-      <Row id='approach-card-trigger'>
+      <Row id='approach-card-trigger' className='m-top-25'>
         <Col xl={3} md={6} className={Aboutpage.cardCol}>
-          <div className={`card ${Aboutpage.approachCard}`}>
+          <div
+            className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard01}`}
+          >
             <h2>UX Research</h2>
             <p>
               I focus on understanding user behaviors, needs, and motivations

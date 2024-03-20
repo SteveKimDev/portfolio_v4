@@ -109,7 +109,7 @@
 .approach-card {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 25px;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -133,6 +133,10 @@
 }
 
 @media (max-width: 600px) {
+  .approach-card01 {
+    margin-top: 0;
+  }
+
   .approach-card02,
   .approach-card03,
   .approach-card04 {
