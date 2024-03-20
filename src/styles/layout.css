@@ -103,12 +103,12 @@ a {
   }
 
   .section-title-div-2line {
-    height: 155px;
+    height: 135px;
   }
 
   .section-title {
     font-size: 4rem;
-    line-height: 1.7cap;
+    line-height: 1.5cap;
   }
 
   .mobile-display-none {

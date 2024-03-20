@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Steve Kim`,
-    description: `As a seasoned Product Designer, my career is defined by a unique blend of creative design, technical development, strategic content planning, and business analysis.`,
+    description: `I'm Steve Kim, a Senior Product Designer with development experience. Transforming user experiences through creative design & technical expertise.`,
     author: `Steve Kim`,
     siteUrl: `https://stevekim.io`,
   },
