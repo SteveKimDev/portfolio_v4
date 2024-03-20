@@ -8,13 +8,13 @@ import '../styles/layout.css';
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className='screen-orientation'>
       <Logo />
       <MainNav />
-      <main>{children}</main>
+      <main className='main-content'>{children}</main>
       <SocialLinks />
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -56,7 +56,10 @@ const ProjectSection = () => {
       id='project-section'
       className={`m-top-100 horizontal-scroll-container ${Homepage.projectSection}`}
     >
-      <div id='selected-projects-title-trigger' className='section-title-div'>
+      <div
+        id='selected-projects-title-trigger'
+        className='section-title-div-2line'
+      >
         <h1
           id='project-section-title'
           className='gradient-color section-title text-align-center'
