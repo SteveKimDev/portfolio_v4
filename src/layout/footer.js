@@ -34,7 +34,7 @@ const Footer = () => {
           Let's Connect
         </h2>
         <div className='footer-link-div'>
-          <a href='emailto:steve@stevekim.io' className='section-title'>
+          <a href='mailto:steve@stevekim.io' className='section-title'>
             steve@stevekim.io
           </a>
         </div>
