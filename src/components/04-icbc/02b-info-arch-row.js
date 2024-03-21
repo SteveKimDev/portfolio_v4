@@ -58,7 +58,7 @@ const InfoArchRow = () => {
               Information Architecture
             </h2>
             <p className={`text-align-center`}>
-              Created a detailed sitemap, defined page templates, tracked
+              Created a detailed sitemap, defined page templates, identified
               sunsetted pages and media assets, made needed template and
               component redesigns, and contributed to Contentful CMS content
               model development.

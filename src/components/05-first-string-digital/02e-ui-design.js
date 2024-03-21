@@ -99,10 +99,10 @@ const UIDesign = () => {
               <p className={`text-align-center`}>
                 In response to the existing inefficiencies in their SaaS
                 subscription product's onboarding process, First String Digital
-                recognized the need for a comprehensive redesign. This endeavor
-                aimed to streamline the onboarding experience, leading to a
-                significant increase in efficiency and a notable decrease in the
-                signup drop-off rate.
+                recognized the need for a comprehensive redesign and user flow.
+                We aimed to streamline the onboarding experience, leading to a
+                significant increase in user satisfaction and a notable decrease
+                in the signup drop-off rate.
               </p>
             </section>
           </Col>

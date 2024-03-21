@@ -68,14 +68,13 @@ const LayoutTemplateRow = () => {
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
           >
             <h2 className={`gradient-color`}>
-              Transforming an Ineffctive Process Into a Successful Solution
+              Transformed an Ineffctive Process Into a Successful Solution
             </h2>
             <p>
               The successful implementation of a user-friendly sign-up process
               resulted in a significant decrease in drop-off rates during the
               onboarding process. The previous 35% drop-off rate was reduced to
-              less than 20% after the design and launch of the digital sign-up
-              process.
+              less than 20%.
             </p>
           </div>
         </Col>

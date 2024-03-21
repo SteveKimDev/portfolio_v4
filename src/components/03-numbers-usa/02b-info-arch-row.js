@@ -60,7 +60,7 @@ const InfoArchRow = () => {
             <p className={`text-align-center`}>
               Refining the information architecture with a detailed sitemap
               enhances intuitive navigation and ensures content is easily
-              discoverable.
+              discoverable and organized.
             </p>
           </div>
         </Col>

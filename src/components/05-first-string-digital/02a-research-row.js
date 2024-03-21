@@ -56,7 +56,8 @@ const ResearchRow = () => {
 
             <p>
               By synthesizing data from research and discovery, we identified
-              two persona types to guide the user's journey and design strategy.
+              user pain points, and generated two persona types to guide the
+              user's journey and design strategy.
             </p>
           </div>
         </Col>

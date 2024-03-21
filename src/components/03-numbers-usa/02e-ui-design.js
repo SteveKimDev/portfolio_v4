@@ -100,7 +100,7 @@ const UIDesign = () => {
                 A non-profit political organization, recognized the need for a
                 significant website upgrade, encompassing a fresh redesign,
                 enhanced information architecture for page navigation and
-                content reorganization, as well a mobile app platform which
+                content organization, as well a mobile app platform which
                 focused on participation in political initiatives.
               </p>
             </section>

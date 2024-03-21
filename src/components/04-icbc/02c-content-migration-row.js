@@ -67,9 +67,7 @@ const ContentMigrationRow = () => {
           <div
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
           >
-            <h2 className={`gradient-color`}>
-              Content Migration Planning and UAT Process
-            </h2>
+            <h2 className={`gradient-color`}>Content Migration Planning</h2>
             <p>
               Planned the process for manually migrating content that could not
               be automated. Offered guidance on necessary modifications or

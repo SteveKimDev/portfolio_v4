@@ -98,11 +98,11 @@ const UIDesign = () => {
               </h2>
               <p className={`text-align-center`}>
                 A prominent auto insurance company serving the entire Vancouver
-                BC region,put into action an extensive content migration and
+                BC region, put into action an extensive content migration and
                 website replatforing project. The project's objective was to
-                transition from an outdated Sharepoint website and content //
-                management system to a modern, scalable web platform built using
-                NextJS and Contentful for their CMS.
+                transition from an outdated Sharepoint website and CMS to a
+                modern, scalable web platform and CMS built using NextJS and
+                Contentful.
               </p>
             </section>
           </Col>

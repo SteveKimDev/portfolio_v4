@@ -69,7 +69,7 @@ const HeroSection = () => {
               Product Type
             </h2>
             <p className={`${Projectpage.heroSubdescription}`}>
-              Website Redesign
+              Business Website
             </p>
           </div>
         </Col>

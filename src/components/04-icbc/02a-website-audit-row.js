@@ -52,7 +52,7 @@ const WebsiteAuditRow = () => {
           <div
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
           >
-            <h2 className={`gradient-color`}>Website Content Audit</h2>
+            <h2 className={`gradient-color`}>Content Audit</h2>
 
             <p>
               Conducted a thorough audit of the legacy website (over 500 pages),

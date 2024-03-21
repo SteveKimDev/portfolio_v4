@@ -66,10 +66,9 @@ const AboutIntroSection = () => {
       <Row>
         <Col>
           <h1 className={Aboutpage.introHeader} data-speed='1.50'>
-            With over 6 years experience as a Product Designer, my journey has
-            seen me leading the end-to-end design of diverse web and mobile app
-            projects, where I've increased user engagement and client
-            satisfaction through innovative solutions.
+            As a Product Designer, I have led end-to-end design of diverse web
+            and mobile app projects, where I have increased user engagement and
+            client satisfaction through innovative solutions.
           </h1>
         </Col>
       </Row>

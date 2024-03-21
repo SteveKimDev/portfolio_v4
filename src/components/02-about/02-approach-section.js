@@ -68,7 +68,7 @@ const ApproachSection = () => {
           <div
             className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard01}`}
           >
-            <h2>UX Research</h2>
+            <h2>UX Strategy</h2>
             <p>
               I focus on understanding user behaviors, needs, and motivations
               through methodical, user-centered research techniques. I employ a
@@ -82,7 +82,7 @@ const ApproachSection = () => {
           <div
             className={`card ${Aboutpage.approachCard}  ${Aboutpage.approachCard02}`}
           >
-            <h2>UX Design</h2>
+            <h2>UI Design</h2>
             <p>
               My approach centers on crafting visually captivating and
               interactive designs that harmonize creativity with practicality. I
