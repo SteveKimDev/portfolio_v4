@@ -26,7 +26,7 @@ const DetailsSection = () => {
       <DesignSystemRow />
 
       {/* row 6 */}
-      <CaseStudyBtn url='https://docs.google.com/presentation/d/1W6wREAbKEIhWbmRACw8QzHFqug-P_XRSix1djH5m4pw/edit?usp=sharing' />
+      <CaseStudyBtn url='https://docs.google.com/presentation/d/1H8ExaKWMFt2kcBFDcYQ1BIUUjDbKty-J0s6gln4J2Ms/edit#slide=id.p' />
     </div>
   );
 };
