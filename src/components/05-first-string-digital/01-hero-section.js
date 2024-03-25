@@ -68,7 +68,9 @@ const HeroSection = () => {
             <h2 className={`gradient-color ${Projectpage.heroSubtitle}`}>
               Product Type
             </h2>
-            <p className={`${Projectpage.heroSubdescription}`}>SaaS Website</p>
+            <p className={`${Projectpage.heroSubdescription}`}>
+              SaaS Website Feature
+            </p>
           </div>
         </Col>
 
