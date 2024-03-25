@@ -16,7 +16,7 @@ const Project02 = () => {
         />
         <div className={Homepage.projectTitle}>
           <h2>ICBS</h2>
-          <p>Information Architecture | UX Design</p>
+          <p>Website Replatform &amp; CMS</p>
         </div>
       </Link>
     </>

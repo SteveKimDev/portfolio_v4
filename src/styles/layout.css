@@ -360,6 +360,61 @@ section {
   margin-bottom: 0;
 }
 
+.carousel {
+  width: 70% !important;
+  display: block;
+  margin: auto;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+}
+
+.carousel-img {
+  border-radius: 15px;
+  margin: 0 8px;
+}
+
+.carousel-img::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.carousel-caption h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5cap;
+}
+
+.carousel-indicators {
+  top: auto;
+  bottom: -50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
+.carousel-top-title {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
 @media (min-width: 1921px) {
   .card h2 {
     font-size: 2.45rem;
@@ -370,11 +425,35 @@ section {
   .card h2 {
     font-size: 3vw;
   }
+
+  .carousel-caption {
+    top: 55%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 3rem;
+  }
+
+  .carousel-top-title {
+    font-size: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .card h2 {
     font-size: 3.5vw;
+  }
+
+  .carousel {
+    width: 100% !important;
+  }
+
+  .carousel-caption {
+    top: 55%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 3rem;
   }
 }
 
@@ -382,11 +461,35 @@ section {
   .card h2 {
     font-size: 4vw;
   }
+
+  .carousel {
+    width: 100% !important;
+  }
+
+  .carousel-caption {
+    top: 55%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 600px) {
   .card h2 {
     font-size: 7vw;
+  }
+
+  .carousel {
+    width: 100% !important;
+  }
+
+  .carousel-caption {
+    top: 50%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 2.5rem;
   }
 }
 

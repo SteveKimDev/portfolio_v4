@@ -6,6 +6,7 @@ import LayoutTemplateRow from './02c-layout-template-row';
 import DesignSystemRow from './02d-design-system-row';
 import UIDesign from './02e-ui-design';
 import CaseStudyBtn from '../00-reusable-components/case-study-btn';
+import NextProject from '../00-reusable-components/next-project';
 
 const DetailsSection = () => {
   return (
@@ -27,6 +28,9 @@ const DetailsSection = () => {
 
       {/* row 6 */}
       <CaseStudyBtn url='https://docs.google.com/presentation/d/1H8ExaKWMFt2kcBFDcYQ1BIUUjDbKty-J0s6gln4J2Ms/edit#slide=id.p' />
+
+      {/* row 7 */}
+      <NextProject />
     </div>
   );
 };

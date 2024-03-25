@@ -3,9 +3,9 @@ import * as React from 'react';
 import ResearchRow from './02a-research-row';
 import InfoArchRow from './02b-info-arch-row';
 import LayoutTemplateRow from './02c-layout-template-row';
-// import DesignSystemRow from './02d-design-system-row';
 import UIDesign from './02e-ui-design';
 import CaseStudyBtn from '../00-reusable-components/case-study-btn';
+import NextProject from '../00-reusable-components/next-project';
 
 const DetailsSection = () => {
   return (
@@ -23,10 +23,10 @@ const DetailsSection = () => {
       <LayoutTemplateRow />
 
       {/* row 5 */}
-      {/* <DesignSystemRow /> */}
+      <CaseStudyBtn url='https://docs.google.com/presentation/d/1fDdsybfPE7L6UsQMD9oAnmeQELGWJsNXYCa3fbnGs8E/edit?usp=sharing' />
 
       {/* row 6 */}
-      <CaseStudyBtn url='https://docs.google.com/presentation/d/1fDdsybfPE7L6UsQMD9oAnmeQELGWJsNXYCa3fbnGs8E/edit?usp=sharing' />
+      <NextProject />
     </div>
   );
 };
