@@ -62,7 +62,7 @@ const ResearchRow = () => {
             </p>
           </div>
         </Col>
-        <Col lg={{ span: 7, offset: 1 }} id='detail-trigger-1'>
+        <Col lg={{ span: 7, offset: 1 }} id='detail-img-trigger-1'>
           <div>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709922952/NUSA/personas_jx77dl.webp'
