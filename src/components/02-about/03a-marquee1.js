@@ -12,7 +12,14 @@ const Marquee01 = () => {
         <div className={Aboutpage.marqueeSeparator} />
       </div>
       <div className={Aboutpage.marqueeDiv}>
-        <h2>User Research</h2>
+        <h2>UX Research</h2>
+      </div>
+      <div className={Aboutpage.marqueeDiv}>
+        <div className={Aboutpage.marqueeSeparator} />
+      </div>
+
+      <div className={Aboutpage.marqueeDiv}>
+        <h2>Interviews</h2>
       </div>
       <div className={Aboutpage.marqueeDiv}>
         <div className={Aboutpage.marqueeSeparator} />
@@ -26,20 +33,6 @@ const Marquee01 = () => {
       </div>
 
       <div className={Aboutpage.marqueeDiv}>
-        <h2>Information Architecture</h2>
-      </div>
-      <div className={Aboutpage.marqueeDiv}>
-        <div className={Aboutpage.marqueeSeparator} />
-      </div>
-
-      <div className={Aboutpage.marqueeDiv}>
-        <h2>Journey Mapping</h2>
-      </div>
-      <div className={Aboutpage.marqueeDiv}>
-        <div className={Aboutpage.marqueeSeparator} />
-      </div>
-
-      <div className={Aboutpage.marqueeDiv}>
         <h2>Persona Creations</h2>
       </div>
       <div className={Aboutpage.marqueeDiv}>
@@ -47,7 +40,28 @@ const Marquee01 = () => {
       </div>
 
       <div className={Aboutpage.marqueeDiv}>
-        <h2>Accessibility Design</h2>
+        <h2>User Journey Maps</h2>
+      </div>
+      <div className={Aboutpage.marqueeDiv}>
+        <div className={Aboutpage.marqueeSeparator} />
+      </div>
+
+      <div className={Aboutpage.marqueeDiv}>
+        <h2>Information Architecture</h2>
+      </div>
+      <div className={Aboutpage.marqueeDiv}>
+        <div className={Aboutpage.marqueeSeparator} />
+      </div>
+
+      <div className={Aboutpage.marqueeDiv}>
+        <h2>User Flows</h2>
+      </div>
+      <div className={Aboutpage.marqueeDiv}>
+        <div className={Aboutpage.marqueeSeparator} />
+      </div>
+
+      <div className={Aboutpage.marqueeDiv}>
+        <h2>Stakeholder Presentation</h2>
       </div>
       <div className={Aboutpage.marqueeDiv}>
         <div className={Aboutpage.marqueeSeparator} />

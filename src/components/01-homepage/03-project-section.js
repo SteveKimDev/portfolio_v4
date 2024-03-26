@@ -25,7 +25,6 @@ const ProjectSection = () => {
         height: 'auto',
         duration: 1,
         ease: 'power1.outIn',
-
         scrollTrigger: {
           trigger: '#selected-projects-title-trigger',
           start: 'top 70%',

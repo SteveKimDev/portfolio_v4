@@ -269,6 +269,7 @@
 .scroll-wrap {
   display: flex;
   flex-wrap: nowrap;
+  padding-left: 5vw;
 }
 
 .scroll-item {

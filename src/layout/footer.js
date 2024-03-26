@@ -9,12 +9,13 @@ const Footer = () => {
 
     // text animation
     gsap.fromTo(
-      [`.footer-header-div`, `.footer-link-div`],
-      { y: 32, opacity: 0 },
+      [`#footer-header`, `#footer-link`],
+      { y: 32, opacity: 0, height: 0 },
       {
         y: 0,
         opacity: 1,
-        duration: 1.5,
+        height: 'auto',
+        duration: 1,
         stagger: 0.5,
         ease: 'power1.outIn',
 
@@ -29,12 +30,22 @@ const Footer = () => {
   }, []);
   return (
     <section className='footer-section'>
-      <div id='footer-trigger' className='footer-header-div'>
-        <h2 className='text-align-center gradient-color section-title '>
-          Let's Connect
-        </h2>
+      <div id='footer-trigger'>
+        <div>
+          <h2
+            className='text-align-center gradient-color section-title '
+            id='footer-header'
+          >
+            Let's Connect
+          </h2>
+        </div>
+
         <div className='footer-link-div'>
-          <a href='mailto:steve@stevekim.io' className='section-title'>
+          <a
+            href='mailto:steve@stevekim.io'
+            className='section-title'
+            id='footer-link'
+          >
             steve@stevekim.io
           </a>
         </div>

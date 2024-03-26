@@ -410,11 +410,6 @@ section {
   display: none;
 }
 
-.carousel-top-title {
-  font-size: 3rem;
-  font-weight: 300;
-}
-
 @media (min-width: 1921px) {
   .card h2 {
     font-size: 2.45rem;
@@ -432,10 +427,6 @@ section {
 
   .carousel-caption h2 {
     font-size: 3rem;
-  }
-
-  .carousel-top-title {
-    font-size: 2.5rem;
   }
 }
 

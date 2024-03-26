@@ -49,8 +49,8 @@ const SkillsSection = () => {
     };
 
     // Initialize marquees
-    createMarquee(marquee1Ref, 15, 'left');
-    createMarquee(marquee2Ref, 20, 'left');
+    createMarquee(marquee1Ref, 32, 'left');
+    createMarquee(marquee2Ref, 28, 'left');
     createMarquee(marquee3Ref, 20, 'left');
 
     // Section title animation
@@ -67,7 +67,7 @@ const SkillsSection = () => {
         scrollTrigger: {
           trigger: `#skills-section-title-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none none',
         },
       }
     );
@@ -83,7 +83,7 @@ const SkillsSection = () => {
         scrollTrigger: {
           trigger: `#marquee-trigger`,
           start: 'top 70%',
-          toggleActions: 'play none none reset',
+          toggleActions: 'play none none none',
         },
       }
     );
