@@ -16,15 +16,18 @@ const HeroSection = () => {
     });
 
     // Fade-in-Up Animation
-    gsap.from([`.${Projectpage.heroTitle}`, `.sub-section`], {
-      y: 36,
-      height: 0,
-      opacity: 0,
-      stagger: 0.3,
-      delay: 1,
-      duration: 1,
-      ease: 'power1.outIn',
-    });
+    gsap.from(
+      [`.${Projectpage.heroTitle}`, `#hero-description`, `.sub-section`],
+      {
+        y: 36,
+        height: 0,
+        opacity: 0,
+        stagger: 0.3,
+        delay: 1,
+        duration: 1,
+        ease: 'power1.outIn',
+      }
+    );
   }, []);
   return (
     <>
@@ -48,6 +51,12 @@ const HeroSection = () => {
           >
             First String Digital
           </h1>
+          <p
+            className={`text-align-center ${Projectpage.heroDescription}`}
+            id='hero-description'
+          >
+            Decreased the user onboarding drop-off rate by 15%.
+          </p>
         </Col>
 
         {/* hero subtitle and sub-description 1 */}

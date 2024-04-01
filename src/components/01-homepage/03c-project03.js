@@ -16,7 +16,7 @@ const Project03 = () => {
         />
         <div className={Homepage.projectTitle}>
           <h2>First String Digital</h2>
-          <p>SasS Website Feature</p>
+          <p>UX/UI Design</p>
         </div>
       </Link>
     </>

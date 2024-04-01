@@ -126,11 +126,11 @@ const AboutSection = () => {
             Steve Kim
           </h1>
           <p className={`primary-color ${Homepage.aboutSectionDescription}`}>
-            With over six years in the industry, I have honed my skills in UX
-            design, information architecture, content strategy, and business
-            analysis, creating intuitive and user-centric web and mobile
-            solutions that significantly enhance user experiences and drive
-            business success.
+            With over six years in the industry, I have refined my expertise in
+            UX design, information architecture, content strategy, and business
+            analysis. This has enabled me to design intuitive, and user-centric
+            web and mobile solutions that greatly add to achieving the business
+            objectives of my clients.
           </p>
           <div className={`m-top-50 about-section-cta`}>
             <DkButton to='/about' text='Learn More About Me' />

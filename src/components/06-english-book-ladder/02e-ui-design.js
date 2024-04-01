@@ -101,8 +101,7 @@ const UIDesign = () => {
                 required a website redesign to address issues such as
                 inconsistent design, lack of mobile responsiveness, and
                 confusing content. The redesign was necessary to support their
-                marketing initiatives and showcase their English class programs
-                effectively.
+                marketing initiatives and showcase their English class programs.
               </p>
             </section>
           </Col>

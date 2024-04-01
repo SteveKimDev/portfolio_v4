@@ -4,7 +4,7 @@
 }
 
 .hero-copy-row {
-  height: 250px;
+  height: 300px;
 }
 
 .hero-title {
@@ -12,6 +12,11 @@
   text-transform: uppercase;
   line-height: 1.2cap;
   font-weight: 700;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  padding: 0 4vw;
 }
 
 .hero-subtitle {
@@ -80,10 +85,14 @@
 
 @media (max-width: 1199px) {
   .hero-copy-row {
-    height: 200px;
+    height: 285px;
   }
   .hero-title {
     font-size: 5.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.2rem;
   }
 
   .detail-div h2 {
@@ -103,7 +112,7 @@
   }
 
   .hero-copy-row {
-    height: 250px;
+    height: 275px;
   }
 
   .hero-title {
@@ -153,7 +162,7 @@
   }
 
   .hero-copy-row {
-    height: 225px;
+    height: 250px;
   }
 }
 
@@ -168,7 +177,7 @@
   }
 
   .hero-copy-row {
-    height: 415px;
+    height: 500px;
   }
 
   .hero-title {

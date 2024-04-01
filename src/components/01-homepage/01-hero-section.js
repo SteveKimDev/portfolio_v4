@@ -53,9 +53,9 @@ const HeroSection = () => {
           With Web Development Experience
         </h2>
         <p className={`secondary-color ${Homepage.headlineDescription}`}>
-          Offering a unique perspective to create engaging, user-friendly web
-          applications, utilizing both creative and technical problem-solving
-          skills.
+          Combining creativity and technical skill, I design engaging,
+          user-friendly applications that significantly contribute to customer
+          engagement.
         </p>
         <div className={`m-top-75 cta-btn`}>
           <DkButton text='Check Out My Work' to='/#project-section' />
