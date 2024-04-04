@@ -71,7 +71,7 @@ const PersonasRow = () => {
 
             <p>
               The goal to understand and empathize with our users was achieved
-              through sunthesizing the research data to create persona types,
+              through synthesizing the research data to create persona types,
               which served as a foundation for the website design strategy and
               helped to guide the content delivery approach.
             </p>

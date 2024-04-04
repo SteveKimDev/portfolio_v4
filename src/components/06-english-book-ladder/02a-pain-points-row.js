@@ -74,18 +74,6 @@ const PainPointsRow = () => {
             className={`card ${Projectpage.cardDiv}`}
             id='detail-card-trigger-2'
           >
-            <h2>Outdated Content</h2>
-            <p>
-              Outdated and unmanaged content caused frustration among users and
-              negatively impacted their experience.
-            </p>
-          </div>
-        </Col>
-        <Col lg={4}>
-          <div
-            className={`card ${Projectpage.cardDiv}`}
-            id='detail-card-trigger-2'
-          >
             <h2>Poor Design</h2>
             <p>
               Inconsistent design, lack of mobile responsiveness, and a poorly
@@ -102,6 +90,18 @@ const PainPointsRow = () => {
             <p>
               A mixture of Korean and English language content was found to be
               confusing and a negative experience.
+            </p>
+          </div>
+        </Col>
+        <Col lg={4}>
+          <div
+            className={`card ${Projectpage.cardDiv}`}
+            id='detail-card-trigger-2'
+          >
+            <h2>Outdated Content</h2>
+            <p>
+              Outdated and unmanaged content caused frustration among users and
+              negatively impacted their experience.
             </p>
           </div>
         </Col>
