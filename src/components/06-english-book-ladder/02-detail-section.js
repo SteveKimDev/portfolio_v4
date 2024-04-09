@@ -1,12 +1,13 @@
 import * as React from 'react';
 
-import PainPoints from './02a-pain-points-row';
 import UIDesign from './02e-ui-design';
 import CaseStudyBtn from '../00-reusable-components/case-study-btn';
-import PersonasRow from './02b-personas-row';
-import WireframeDesignRow from './02c-wireframe-design';
-import ResponsiveRow from './02d-responsive-row';
+import DiscoverRow from './02a-discover-row';
+import DefnitionRow from './02b-definition-row';
+import DesignRow from './02c-design-row';
+import LaunchRow from './02d-project-launch-row';
 import NextProject from '../00-reusable-components/next-project';
+import ContentModelRow from './02d-content-model-row';
 
 const DetailsSection = () => {
   return (
@@ -15,21 +16,24 @@ const DetailsSection = () => {
       <UIDesign />
 
       {/* row 2 */}
-      <PainPoints />
+      <DiscoverRow />
 
       {/* row 3 */}
-      <PersonasRow />
+      <DefnitionRow />
 
       {/* row 4 */}
-      <WireframeDesignRow />
+      <DesignRow />
 
       {/* row 5 */}
-      <ResponsiveRow />
+      <ContentModelRow />
 
       {/* row 6 */}
-      <CaseStudyBtn url='https://docs.google.com/presentation/d/1oeB2qXtVFANFCyhGpUswBMU1nVrK8pjv7wN9XGF8ibE/edit?usp=sharing' />
+      <LaunchRow />
 
       {/* row 7 */}
+      <CaseStudyBtn url='https://docs.google.com/presentation/d/160GIHCPp03TVDIijhg0q6gqVt3zRcFF1DGfR0ZgD5Vo/edit?usp=sharing' />
+
+      {/* row 8 */}
       <NextProject />
     </div>
   );

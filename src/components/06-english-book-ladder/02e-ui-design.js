@@ -14,7 +14,7 @@ const UIDesign = () => {
 
     // fadeInUp animation
     gsap.fromTo(
-      [`#detail-trigger-5`],
+      [`#detail-trigger-6`],
       { y: 32, opacity: 0 },
       {
         y: 0,
@@ -23,7 +23,7 @@ const UIDesign = () => {
         ease: 'power1.outIn',
 
         scrollTrigger: {
-          trigger: `#detail-trigger-5`,
+          trigger: `#detail-trigger-6`,
           start: 'top 70%',
           toggleActions: 'play none none none',
         },
@@ -90,18 +90,18 @@ const UIDesign = () => {
           <Col
             xl={{ span: 6, offset: 3 }}
             lg={{ span: 10, offset: 1 }}
-            id='detail-trigger-5'
+            id='detail-trigger-6'
           >
             <section className={` ${Projectpage.detailDiv}`}>
               <h2 className={`gradient-color text-align-center`}>
                 Project Summary
               </h2>
               <p className={`text-align-center`}>
-                An English language academy and library based in South Korea,
-                required a website redesign to address issues such as
-                inconsistent design, lack of mobile responsiveness, and
-                confusing content. The redesign was necessary to support their
-                marketing initiatives and showcase their English class programs.
+                A South Korea-based English language academy needed a complete
+                overhaul of its website to resolve several key issues such as
+                inconsistent design layout, lack of responsive design, inability
+                to update content, which prevented the website capable of
+                supporting their marketing campaigns campaigns.
               </p>
             </section>
           </Col>

@@ -90,19 +90,19 @@ const ProjectSection = () => {
           <Project01 />
         </div>
 
-        {/* item 2 */}
+        {/* item 2*/}
         <div className={`scroll-item ${Homepage.scrollItem}`}>
-          <Project02 />
+          <Project04 />
         </div>
 
         {/* item 3 */}
         <div className={`scroll-item ${Homepage.scrollItem}`}>
-          <Project03 />
+          <Project02 />
         </div>
 
         {/* item 4 */}
         <div className={`scroll-item ${Homepage.scrollItem}`}>
-          <Project04 />
+          <Project03 />
         </div>
 
         {/* item 5 */}

@@ -35,7 +35,7 @@ const CaseStudyBtn = ({ url }) => {
   return (
     <div className='text-align-center m-top-100' id='case-study-btn-trigger'>
       <a href={url} target='_blank' rel='noreferrer' className='dk-button'>
-        <span>View Full Case Study</span>
+        <span>Review Full Case Study</span>
       </a>
     </div>
   );

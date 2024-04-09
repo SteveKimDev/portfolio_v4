@@ -8,13 +8,13 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as Projectpage from '../../styles/project.module.css';
 
 // copy left col and image right col row
-const PersonasRow = () => {
+const DefinitionRow = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     // fadeInUp animation
     gsap.fromTo(
-      [`#detail-trigger-1`],
+      [`#detail-trigger-2`],
       { y: 32, opacity: 0 },
       {
         y: 0,
@@ -23,7 +23,7 @@ const PersonasRow = () => {
         ease: 'power1.outIn',
 
         scrollTrigger: {
-          trigger: `#detail-trigger-1`,
+          trigger: `#detail-trigger-2`,
           start: 'top 70%',
           toggleActions: 'play none none none',
         },
@@ -31,7 +31,7 @@ const PersonasRow = () => {
     );
 
     gsap.fromTo(
-      [`#detail-img-trigger-1`],
+      [`#detail-img-trigger-2`],
       { opacity: 0 },
       {
         opacity: 1,
@@ -39,7 +39,7 @@ const PersonasRow = () => {
         ease: 'power1.outIn',
 
         scrollTrigger: {
-          trigger: `#detail-img-trigger-1`,
+          trigger: `#detail-img-trigger-2`,
           start: 'top 70%',
           toggleActions: 'play none none none',
         },
@@ -49,7 +49,7 @@ const PersonasRow = () => {
   return (
     <section>
       <Row className={`m-top-100`}>
-        <Col lg={7} id='detail-trigger-1'>
+        <Col lg={7} id='detail-img-trigger-2'>
           <div>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710796062/English%20Book%20Ladder/personas_pi4sbh.webp'
@@ -61,20 +61,36 @@ const PersonasRow = () => {
         </Col>
         <Col
           lg={{ span: 4, offset: 1 }}
-          id='detail-trigger-1'
+          id='detail-trigger-2'
           className={`relative`}
         >
           <div
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
           >
-            <h2 className={`gradient-color`}>User Personas</h2>
+            <h2 className={`gradient-color`}>Defining Our Users Needs</h2>
 
             <p>
-              The goal to understand and empathize with our users was achieved
-              through synthesizing the research data to create persona types,
-              which served as a foundation for the website design strategy and
-              helped to guide the content delivery approach.
+              To achieve our goal of understanding and empathizing with our
+              users, we undertook the following steps:
             </p>
+            <ul>
+              <li>Synthesized research data to pinpoint user pain points.</li>
+              <li>Created personas based on these insights.</li>
+              <li>
+                Developed a sitemap to serve as the foundation for our website
+                design strategy.
+              </li>
+            </ul>
+            <div className='m-top-50'>
+              <a
+                className='dk-button'
+                href='https://docs.google.com/presentation/d/160GIHCPp03TVDIijhg0q6gqVt3zRcFF1DGfR0ZgD5Vo/edit#slide=id.g2c87bce9c67_0_0'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <span>Case Study Details</span>
+              </a>
+            </div>
           </div>
         </Col>
       </Row>
@@ -82,4 +98,4 @@ const PersonasRow = () => {
   );
 };
 
-export default PersonasRow;
+export default DefinitionRow;

@@ -55,8 +55,7 @@ const HeroSection = () => {
             className={`text-align-center ${Projectpage.heroDescription}`}
             id='hero-description'
           >
-            Boosted the number of direct business contacts originating from the
-            website by 50%
+            Increased New Visitors by 125% in Just 3 Months
           </p>
         </Col>
 
