@@ -48,6 +48,10 @@
   border-radius: 15px;
 }
 
+.slider-img {
+  border-radius: 15px;
+}
+
 .card-col {
   display: flex;
   flex-wrap: wrap;

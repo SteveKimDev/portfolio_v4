@@ -84,7 +84,7 @@ const UIDesign = () => {
   return (
     <>
       <Row
-        className={`m-top-100 horizontal-scroll-container ${Projectpage.horizontalScrollContainer}`}
+        className={`m-top-200 lg-m-top-100 horizontal-scroll-container ${Projectpage.horizontalScrollContainer}`}
       >
         <Col sm={12}>
           <Col
@@ -98,8 +98,8 @@ const UIDesign = () => {
               </h2>
               <p className={`text-align-center`}>
                 A non-profit political organization, recognized the need for a
-                significant website upgrade, encompassing a fresh redesign,
-                enhanced information architecture for page navigation and
+                website and CMS upgrade, encompassing a website redesign,
+                improved information architecture for page navigation and
                 content organization, as well a mobile app platform which
                 focused on participation in political initiatives.
               </p>

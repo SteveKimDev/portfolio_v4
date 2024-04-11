@@ -7,7 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import * as Projectpage from '../../styles/project.module.css';
 
-const InfoArchRow = () => {
+const DesignSystemRow = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -47,29 +47,39 @@ const InfoArchRow = () => {
   }, []);
   return (
     <section>
-      <Row className={`m-top-100`}>
+      <Row className={`m-top-200 lg-m-top-100`}>
         <Col
-          xl={{ span: 6, offset: 3 }}
+          xl={{ span: 4, offset: 4 }}
           lg={{ span: 8, offset: 2 }}
           id='detail-trigger-2'
+          className='m-bottom-50 lg-m-bottom-25'
         >
           <div className={` ${Projectpage.detailDiv}`}>
-            <h2 className={`gradient-color text-align-center`}>
-              Information Architecture and Content Strategy
-            </h2>
-            <p className={`text-align-center`}>
-              Refining the information architecture with a detailed sitemap
-              enhances intuitive navigation and ensures content is easily
-              discoverable and organized.
+            <h2 className={`gradient-color`}>Scalable Design System</h2>
+            <p>
+              Creating and maintaining a unified design system, allowed our
+              development team to efficiently develop consistent, scalable, and
+              aesthetically pleasing user interfaces for the website and the
+              mobile app.
             </p>
           </div>
         </Col>
-        <Col xl={{ span: 10, offset: 1 }} id='detail-img-trigger-2'>
-          <div className={`m-top-25 tablet-m-top-0`}>
+        <Col xs={6} xl={{ span: 5, offset: 1 }} id='detail-img-trigger-2'>
+          <div style={{ padding: '8px' }}>
             <StaticImage
-              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1709855286/NUSA/sitemap_m8rnd0.webp'
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193722/NUSA/design_system_-_color_ui8tei.webp'
               placeholder='blurred'
-              alt='sitemap img'
+              alt='design system img'
+              className={Projectpage.detailImg}
+            />
+          </div>
+        </Col>
+        <Col xs={6} xl={5} id='detail-img-trigger-2'>
+          <div style={{ padding: '8px' }}>
+            <StaticImage
+              src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193723/NUSA/design_system_-_typograpghy_tivwpp.webp'
+              placeholder='blurred'
+              alt='design system img'
               className={Projectpage.detailImg}
             />
           </div>
@@ -79,4 +89,4 @@ const InfoArchRow = () => {
   );
 };
 
-export default InfoArchRow;
+export default DesignSystemRow;

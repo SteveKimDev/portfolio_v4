@@ -55,8 +55,7 @@ const HeroSection = () => {
             className={`text-align-center ${Projectpage.heroDescription}`}
             id='hero-description'
           >
-            Obtained over 500 new user signups within the first month after
-            launch.
+            Obtained over 500 user signups within a month after launch.
           </p>
         </Col>
 

@@ -16,7 +16,7 @@ const Project04 = () => {
         />
         <div className={Homepage.projectTitle}>
           <h2>English Book Ladder</h2>
-          <p>UX/UI Design &amp; Content Model Design</p>
+          <p>UX/UI Design, Content Model Design, &amp; Development</p>
         </div>
       </Link>
     </>
