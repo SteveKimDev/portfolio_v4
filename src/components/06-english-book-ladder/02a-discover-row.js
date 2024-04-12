@@ -104,19 +104,21 @@ const DiscoverRow = () => {
             </p>
             <ul>
               <li>
-                Value Propositions: Clear service descriptions and philosophies.
+                <span className='accent-color'>Value Propositions:</span> Clear
+                service descriptions and philosophies.
               </li>
               <li>
-                Weaknesses: Lack of mobile responsiveness, overwhelming content
-                layout.
+                <span className='accent-color'>Weaknesses:</span> Lack of mobile
+                responsiveness, overwhelming content layout.
               </li>
               <li>
-                Areas to Emulate: Updated class/program information with
-                schedules and curriculums
+                <span className='accent-color'>Areas to Emulate:</span> Updated
+                class/program information with schedules and curriculums
               </li>
               <li>
-                Improvement Opportunities: Websites exclusively in Korean,
-                missing the opportunity to engage English-speaking parents.
+                <span className='accent-color'>Improvement Opportunities:</span>{' '}
+                Websites exclusively in Korean, missing the opportunity to
+                engage English-speaking parents.
               </li>
             </ul>
           </div>
