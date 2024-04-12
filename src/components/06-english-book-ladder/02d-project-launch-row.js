@@ -47,12 +47,12 @@ const LaunchRow = () => {
   }, []);
   return (
     <section>
-      <Row className={`m-top-100`}>
+      <Row className={`m-top-200 lg-m-top-100`}>
         <Col
           xl={{ span: 6, offset: 3 }}
           lg={{ span: 8, offset: 2 }}
           id='detail-trigger-5'
-          className={`${Projectpage.order2}`}
+          className={`m-bottom-50`}
         >
           <div className={` ${Projectpage.detailDiv}`}>
             <h2 className={`gradient-color text-align-center`}>
@@ -80,11 +80,7 @@ const LaunchRow = () => {
             </p>
           </div>
         </Col>
-        <Col
-          xl={{ span: 10, offset: 1 }}
-          className={`${Projectpage.order1}`}
-          id='detail-img-trigger-5'
-        >
+        <Col xl={{ span: 10, offset: 1 }} id='detail-img-trigger-5'>
           <div className={`m-top-25 tablet-m-top-0`}>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710799057/English%20Book%20Ladder/responsive-img_sgbcs4.webp'

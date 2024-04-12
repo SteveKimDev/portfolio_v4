@@ -71,9 +71,17 @@ const MobileAppDesignRow = () => {
               promote user participation in political initiatives. This approach
               utilizes interactive features, such as gamification, and
               notifications to encourage active engagement, enabling users to
-              easily get involved directly from their mobile devices
+              easily get involved directly from their mobile devices. Key
+              contributions include:
             </p>
-            <div className='m-top-50 m-bottom-50'>
+            <ul>
+              <li>Sitemap and optimized user flows</li>
+              <li>Collaboration with UI designer</li>
+              <li>Newsfeed design and function</li>
+              <li>Gamification feature</li>
+              <li>Design iterations</li>
+            </ul>
+            {/* <div className='m-top-50 m-bottom-50'>
               <a
                 className='dk-button'
                 href='https://www.figma.com/file/jUKxin7EuU86JZPQw56wDn/NUSA?type=design&node-id=1259%3A17973&mode=design&t=7uPL0hdkT9VCZ1GN-1'
@@ -82,7 +90,7 @@ const MobileAppDesignRow = () => {
               >
                 <span>Figma: Mobile App Design</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </Col>
         <Col xs={12} id='detail-slider-trigger-4'>

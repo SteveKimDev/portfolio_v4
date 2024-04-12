@@ -71,9 +71,8 @@ const LaunchRow = () => {
                 applications.
               </li>
               <li>
-                We revamped the design to appeal to a younger audience while
-                retaining existing users, resulting in increased sign-up rates
-                and engagement.
+                Increased user sign-up. Achieved to obtain over 500 new signups
+                within a month post-launch.
               </li>
               <li>
                 The introduction of a comprehensive content organization system

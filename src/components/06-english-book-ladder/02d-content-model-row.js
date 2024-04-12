@@ -48,8 +48,12 @@ const ContentModelRow = () => {
   }, []);
   return (
     <section>
-      <Row className={`m-top-100`}>
-        <Col lg={6} id='detail-img-trigger-4'>
+      <Row className={`m-top-200 lg-m-top-100`}>
+        <Col
+          lg={6}
+          id='detail-img-trigger-4'
+          className={`${Projectpage.order2}`}
+        >
           <div>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1712619115/English%20Book%20Ladder/card_assembly_xhl1rc.webp'
@@ -62,7 +66,7 @@ const ContentModelRow = () => {
         <Col
           lg={{ span: 5, offset: 1 }}
           id='detail-trigger-4'
-          className={`relative`}
+          className={`relative md-m-bottom-50 ${Projectpage.order1}`}
         >
           <div
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
@@ -85,7 +89,7 @@ const ContentModelRow = () => {
                 and Contentful's customizable platform.
               </li>
             </ul>
-            <div className='m-top-50'>
+            {/* <div className='m-top-50'>
               <a
                 className='dk-button'
                 href='https://www.figma.com/file/FlLYzqxpgKOAGTLZglkV1e/EBL-Project?type=design&node-id=1%3A70&mode=design&t=jcpzsw9boYpQdq1v-1'
@@ -94,7 +98,7 @@ const ContentModelRow = () => {
               >
                 <span>Figma: Content Model</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </Col>
       </Row>

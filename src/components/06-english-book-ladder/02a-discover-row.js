@@ -50,11 +50,12 @@ const DiscoverRow = () => {
   }, []);
   return (
     <section>
-      <Row className={`m-top-100`}>
+      <Row className={`m-top-200 lg-m-top-100`}>
         <Col
           xl={{ span: 6, offset: 3 }}
           lg={{ span: 8, offset: 2 }}
           id='detail-trigger-1'
+          className='m-bottom-50'
         >
           <div className={` ${Projectpage.detailDiv}`}>
             <h2 className={`gradient-color text-align-center`}>

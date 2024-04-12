@@ -84,7 +84,7 @@ const UIDesign = () => {
   return (
     <>
       <Row
-        className={`m-top-100 horizontal-scroll-container ${Projectpage.horizontalScrollContainer}`}
+        className={`m-top-200 lg-m-top-100 horizontal-scroll-container ${Projectpage.horizontalScrollContainer}`}
       >
         <Col sm={12}>
           <Col

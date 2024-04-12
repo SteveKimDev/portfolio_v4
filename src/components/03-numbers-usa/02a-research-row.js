@@ -52,7 +52,7 @@ const ResearchRow = () => {
           xl={{ span: 4, offset: 4 }}
           lg={{ span: 8, offset: 2 }}
           id='detail-trigger-1'
-          className={`relative`}
+          className={` m-bottom-50`}
         >
           <div className={`${Projectpage.detailDiv} `}>
             <h2 className={`gradient-color`}>Research and Insights</h2>
@@ -61,7 +61,7 @@ const ResearchRow = () => {
               Completing a comprehensive site audit, conducting user research,
               and stakeholder interviews were pivotal in documenting and
               presenting a UX strategy. These steps allowed for an understanding
-              of the existing challenges and opportunities. Key outcomes
+              of the existing challenges and opportunities. Key contributions
               include:
             </p>
             <ul>
@@ -72,7 +72,7 @@ const ResearchRow = () => {
                 Outlined content migration strategy and feature specifications
               </li>
             </ul>
-            <div className='m-top-50 m-bottom-100 lg-m-bottom-75'>
+            {/* <div className='m-top-50 m-bottom-100 lg-m-bottom-75'>
               <a
                 className='dk-button'
                 href='https://docs.google.com/presentation/d/1H8ExaKWMFt2kcBFDcYQ1BIUUjDbKty-J0s6gln4J2Ms/edit#slide=id.g2c4e9190c12_0_59'
@@ -81,7 +81,7 @@ const ResearchRow = () => {
               >
                 <span>Case Study Details</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </Col>
         <Col xl={12} id='detail-img-trigger-1'>

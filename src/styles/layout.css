@@ -56,12 +56,16 @@ h6 {
   color: #ffffff;
 }
 
+.accent-color {
+  color: #8ec8f3;
+}
+
 .gradient-color {
   background: linear-gradient(135deg, #8ec8f3, #a6b4ff, #c7a3ff, #eb8ef3);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  display: block;
+  /* display: block; */
 }
 
 a {
@@ -225,6 +229,14 @@ section {
 
   .tablet-m-top-0 {
     margin-top: 0;
+  }
+
+  .md-m-bottom-50 {
+    margin-bottom: 50px;
+  }
+
+  .md-m-bottom-25 {
+    margin-bottom: 25px;
   }
 }
 

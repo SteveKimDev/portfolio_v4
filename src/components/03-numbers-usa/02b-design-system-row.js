@@ -57,14 +57,36 @@ const DesignSystemRow = () => {
           <div className={` ${Projectpage.detailDiv}`}>
             <h2 className={`gradient-color`}>Scalable Design System</h2>
             <p>
-              Creating and maintaining a unified design system, allowed our
-              development team to efficiently develop consistent, scalable, and
-              aesthetically pleasing user interfaces for the website and the
-              mobile app.
+              The UI Designer and I collaborated closely to finalize the design
+              system, which streamlined our design and development process. By
+              creating and maintaining this system, our development team has
+              been able to efficiently produce user interfaces that are
+              consistent and scalable across both the website and the mobile app
+              and are also aesthetically pleasing. The design system includes:
             </p>
+            <Row>
+              <Col xs={4}>
+                <ul>
+                  <li>Color</li>
+                  <li>Typography</li>
+                  <li>Images</li>
+                </ul>
+              </Col>
+              <Col xs={6}>
+                <ul>
+                  <li>Iconography</li>
+                  <li>UI Components</li>
+                </ul>
+              </Col>
+            </Row>
           </div>
         </Col>
-        <Col xs={6} xl={{ span: 5, offset: 1 }} id='detail-img-trigger-2'>
+        <Col
+          xs={12}
+          sm={6}
+          xl={{ span: 5, offset: 1 }}
+          id='detail-img-trigger-2'
+        >
           <div style={{ padding: '8px' }}>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193722/NUSA/design_system_-_color_ui8tei.webp'
@@ -74,7 +96,7 @@ const DesignSystemRow = () => {
             />
           </div>
         </Col>
-        <Col xs={6} xl={5} id='detail-img-trigger-2'>
+        <Col xs={12} sm={6} xl={5} id='detail-img-trigger-2'>
           <div style={{ padding: '8px' }}>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710193723/NUSA/design_system_-_typograpghy_tivwpp.webp'

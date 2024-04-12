@@ -3,7 +3,7 @@ import * as React from 'react';
 import UIDesign from './02e-ui-design';
 import ResearchRow from './02a-research-row';
 import DesignSystemRow from './02b-design-system-row';
-import WebsiteDesignRow from './02d-website-design-row';
+import WebsiteDesignRow from './02c-website-design-row';
 import MobileAppDesignRow from './02d-mobile-app-design-row';
 import LaunchRow from './02f-launch-row';
 import CaseStudyBtn from '../00-reusable-components/case-study-btn';

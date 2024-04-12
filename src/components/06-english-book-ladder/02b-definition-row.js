@@ -48,8 +48,12 @@ const DefinitionRow = () => {
   }, []);
   return (
     <section>
-      <Row className={`m-top-100`}>
-        <Col lg={7} id='detail-img-trigger-2'>
+      <Row className={`m-top-200 lg-m-top-100`}>
+        <Col
+          lg={7}
+          id='detail-img-trigger-2'
+          className={`${Projectpage.order2}`}
+        >
           <div>
             <StaticImage
               src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1710796062/English%20Book%20Ladder/personas_pi4sbh.webp'
@@ -62,7 +66,7 @@ const DefinitionRow = () => {
         <Col
           lg={{ span: 4, offset: 1 }}
           id='detail-trigger-2'
-          className={`relative`}
+          className={`relative md-m-bottom-25 ${Projectpage.order1}`}
         >
           <div
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
@@ -81,7 +85,7 @@ const DefinitionRow = () => {
                 design strategy.
               </li>
             </ul>
-            <div className='m-top-50'>
+            {/* <div className='m-top-50'>
               <a
                 className='dk-button'
                 href='https://docs.google.com/presentation/d/160GIHCPp03TVDIijhg0q6gqVt3zRcFF1DGfR0ZgD5Vo/edit#slide=id.g2c87bce9c67_0_0'
@@ -90,7 +94,7 @@ const DefinitionRow = () => {
               >
                 <span>Case Study Details</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </Col>
       </Row>

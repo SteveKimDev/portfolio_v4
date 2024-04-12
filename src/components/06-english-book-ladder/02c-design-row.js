@@ -47,12 +47,8 @@ const DesignRow = () => {
   }, []);
   return (
     <section>
-      <Row className={`m-top-100`}>
-        <Col
-          lg={4}
-          className={`relative ${Projectpage.order2}`}
-          id='detail-trigger-3'
-        >
+      <Row className={`m-top-200 lg-m-top-100`}>
+        <Col lg={4} className={`relative md-m-bottom-50`} id='detail-trigger-3'>
           <div
             className={`${Projectpage.detailDiv} ${Projectpage.detailDivCenterAlign}`}
           >
@@ -73,7 +69,7 @@ const DesignRow = () => {
                 professionals.
               </li>
             </ul>
-            <div className='m-top-50 m-bottom-50'>
+            {/* <div className='m-top-50 m-bottom-50'>
               <a
                 className='dk-button'
                 href='https://www.figma.com/file/FlLYzqxpgKOAGTLZglkV1e/EBL-Project?type=design&node-id=12%3A8751&mode=design&t=jcpzsw9boYpQdq1v-1'
@@ -82,12 +78,12 @@ const DesignRow = () => {
               >
                 <span>Figma: Final Design</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </Col>
-        <Col lg={{ span: 7, offset: 1 }} className={`${Projectpage.order1}`}>
+        <Col lg={{ span: 7, offset: 1 }}>
           <Row>
-            <Col xs={6} id='detail-img-trigger-3'>
+            <Col sm={6} id='detail-img-trigger-3'>
               <div style={{ padding: '8px' }}>
                 <StaticImage
                   src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1712617164/English%20Book%20Ladder/wireframe_jony11.webp'
@@ -97,7 +93,7 @@ const DesignRow = () => {
                 />
               </div>
             </Col>
-            <Col xs={6} id='detail-img-trigger-3'>
+            <Col sm={6} id='detail-img-trigger-3'>
               <div style={{ padding: '8px' }}>
                 <StaticImage
                   src='https://res.cloudinary.com/stevekim/image/upload/q_auto/v1712617165/English%20Book%20Ladder/hi-fi-design_vzlgbw.webp'
