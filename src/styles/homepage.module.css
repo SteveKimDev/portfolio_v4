@@ -129,6 +129,7 @@
 .about-intro {
   font-size: 10.5vw;
   line-height: 1.3cap;
+  font-weight: 700;
 }
 
 .about-section-description {
@@ -186,7 +187,7 @@
   }
 
   .about-intro {
-    font-size: 13rem;
+    font-size: 12.5rem;
   }
 
   .about-section-description {
@@ -200,7 +201,7 @@
   }
 
   .about-intro {
-    font-size: 9.7vw;
+    font-size: 9.5vw;
   }
 
   .about-section-description {
@@ -214,7 +215,7 @@
   }
 
   .about-intro {
-    font-size: 9.7vw;
+    font-size: 9.5vw;
   }
 
   .about-section-description {
@@ -249,7 +250,7 @@
   }
 
   .about-section-img-div .about-section-img {
-    width: 60%;
+    width: 90%;
   }
 
   .about-section-img-div1,

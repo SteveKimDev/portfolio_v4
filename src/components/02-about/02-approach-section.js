@@ -64,59 +64,47 @@ const ApproachSection = () => {
         </Col>
       </Row>
       <Row id='approach-card-trigger' className='m-top-25'>
-        <Col xl={3} md={6} className={Aboutpage.cardCol}>
+        <Col xl={4} lg={6} className={Aboutpage.cardCol}>
           <div
             className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard01}`}
           >
             <h2>UX Strategy</h2>
             <p>
-              I focus on understanding user behaviors, needs, and motivations
-              through methodical, user-centered research techniques. I employ a
-              variety of research methods including surveys, interviews,
-              usability testing, and observational studies to gather actionable
-              insights.
+              My UX strategy apporach centers on understanding user needs and
+              behaviors through comprehensive research, using these insights to
+              develop user-centric solutions that enhance engagement and meet
+              business objectives. I refine designs iteratively to ensure they
+              exceed user expectations and deliver measurable results.
             </p>
           </div>
         </Col>
-        <Col xl={3} md={6} className={Aboutpage.cardCol}>
+        <Col xl={4} lg={6} className={Aboutpage.cardCol}>
           <div
             className={`card ${Aboutpage.approachCard}  ${Aboutpage.approachCard02}`}
           >
             <h2>UI Design</h2>
             <p>
-              My approach centers on crafting visually captivating and
-              interactive designs that harmonize creativity with practicality. I
-              excel in the artful integration of crucial brand
-              elements—including color palettes, typography, and visual
-              themes—to forge a unified and impactful user experience.
+              My UI design approach prioritizes aesthetic excellence and
+              functional simplicity to create engaging and intuitive interfaces.
+              I focus on visual clarity, using consistent and accessible design
+              elements that align with the brand identity. By leveraging user
+              feedback and current design trends, I continuously refine and
+              optimize interfaces to improve user interaction and satisfaction.
             </p>
           </div>
         </Col>
-        <Col xl={3} md={6} className={Aboutpage.cardCol}>
-          <div
-            className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard03}`}
-          >
-            <h2>Development</h2>
-            <p>
-              Deep collaboration with developers to realize our collective
-              vision, I emphasize open dialogue and a cyclical approach to
-              design, we validate the technical viability, forging products that
-              exemplify a harmonious integration of design principles and
-              technological innovation.
-            </p>
-          </div>
-        </Col>
-        <Col xl={3} md={6} className={Aboutpage.cardCol}>
+        <Col xl={4} lg={12} className={Aboutpage.cardCol}>
           <div
             className={`card ${Aboutpage.approachCard} ${Aboutpage.approachCard04}`}
           >
             <h2>Teamwork</h2>
             <p>
-              Fostering open communication and collaboration is crucial for
-              transforming web/mobile app concepts into reality. By working
-              closely with cross-functional teams, I commit to fully
-              understanding and meeting client objectives, while providing
-              transparent, constructive feedback.
+              My approach to teamwork involves open communication among
+              cross-functional team members. I prioritize understanding and
+              integrating diverse perspectives to drive innovative solutions and
+              achieve common goals. By facilitating regular discussions and
+              feedback sessions, I ensure all voices are heard and that our
+              collaborative efforts are aligned with project objectives.
             </p>
           </div>
         </Col>

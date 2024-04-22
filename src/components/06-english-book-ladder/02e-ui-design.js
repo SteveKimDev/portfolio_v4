@@ -101,7 +101,7 @@ const UIDesign = () => {
                 overhaul of its website to resolve several key issues such as
                 inconsistent design layout, lack of responsive design, inability
                 to update content, which prevented the website capable of
-                supporting their marketing campaigns campaigns.
+                supporting their marketing campaigns.
               </p>
             </section>
           </Col>

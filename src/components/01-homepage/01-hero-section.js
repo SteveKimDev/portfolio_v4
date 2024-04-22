@@ -58,7 +58,7 @@ const HeroSection = () => {
           engagement.
         </p>
         <div className={`m-top-75 cta-btn`}>
-          <DkButton text='Check Out My Work' to='/#project-section' />
+          <DkButton text='Selected Projects' to='/#project-section' />
         </div>
       </div>
     </div>
