@@ -25,11 +25,11 @@ const SocialLinks = () => {
         </div>
         <div>
           <a
-            href='https://docs.google.com/presentation/d/1c-zMkORFNbzXuJVGYaujc_MH_QrA1QX4GwKkci06N0I/edit?usp=sharing'
+            href='https://www.instagram.com/stevekim_io?igsh=cGswcDJmOWxxejBr&utm_source=qr'
             target='_blank'
             rel='noreferrer'
           >
-            Case Studies
+            Instagram
           </a>
         </div>
       </Stack>
