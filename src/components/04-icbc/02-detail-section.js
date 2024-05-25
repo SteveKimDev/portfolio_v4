@@ -23,7 +23,7 @@ const DetailsSection = () => {
       <ContentMigrationRow />
 
       {/* row 5 */}
-      <CaseStudyBtn url='https://docs.google.com/presentation/d/1G3MKPudSXzFiXY00n2BWBLPtNXppffGQc-vUsreJHFw/edit?usp=sharing' />
+      <CaseStudyBtn url='https://docs.google.com/presentation/d/1mDxOlCx7dMeEeDsyKyYoHAci8A2g66aLujoMDLzeA6k/edit?usp=sharing' />
 
       {/* row 6 */}
       <NextProject />
